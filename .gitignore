@@ -1,7 +1,7 @@
 node_modules
 node_modules
 package-lock.json
-bot.data.json
+guru.data.json
 database.json
 .env
 session
