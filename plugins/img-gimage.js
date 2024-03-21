@@ -18,7 +18,9 @@ handler.tags = ['img']
 
 handler.command = /^(img|image|gimage|imagen)$/i
 
-handler.diamond = false
+handler.premium = false
+
+handler.group = true 
 
 export default handler
 
