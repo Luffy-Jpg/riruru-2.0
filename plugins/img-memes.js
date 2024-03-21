@@ -19,6 +19,7 @@ const handler = async (m, { conn, usedPrefix, command }) => {
 handler.help = ['meme'];
 handler.tags = ['img'];
 handler.command = ['meme', 'memes'];
-handler.diamond = true;
+handler.premium = false;
+handler.group = true;
 
 export default handler;
