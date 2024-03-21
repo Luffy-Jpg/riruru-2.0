@@ -11,7 +11,8 @@ let handler = async(m, { conn, usedPrefix, command }) => {
 handler.help = ['girl']
 handler.tags = ['img']
 handler.command = ['girl', 'woman']
-handler.diamond = true
+handler.premium = true
+handler.group = true 
 
 export default handler
 
