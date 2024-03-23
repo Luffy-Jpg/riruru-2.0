@@ -4,7 +4,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   var vn = "https://raw.githubusercontent.com/thearju/A17/master/Assets/audio/doreamon.mp3";
   let url = "https://github.com/thearju/gmx-1.0";
   let murl = "https://bot-support.vercel.app";
-  let img = "https://i.postimg.cc/8PDCmWt4/Screenshot-2024-03-06-10-02-39-296-com-miui-gallery.png";
+  let img = "https://i.postimg.cc/dt6J5sd9/pipo.png";
   let con = {
     key: {
       fromMe: false,
