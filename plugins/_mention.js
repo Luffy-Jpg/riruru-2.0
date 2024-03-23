@@ -5,11 +5,11 @@
 
 let handler = m => m
 handler.all = async function (m, conn) {
-    var vn = "https://raw.githubusercontent.com/thearju/A17/master/Assets/audio/AUD-20240130-WA0045.m4a"
+    var vn = "https://raw.githubusercontent.com/thearju/A17/master/Assets/audio/tag.mp3"
     let url = "https://bot-support.vercel.app"
     let murl = "https://bot-support.vercel.app"
     let hash = global.botname
-    let img = "https://i.postimg.cc/rpzfTtFT/woman-8382546-1280.jpg"
+    let img = "https://i.postimg.cc/8PDCmWt4/Screenshot-2024-03-06-10-02-39-296-com-miui-gallery.png"
     let num = "919131652091"
 
     let doc = {
