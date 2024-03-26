@@ -18,7 +18,7 @@ handler.tags = ['img']
 
 handler.command = /^(img|image|gimage|imagen)$/i
 
-handler.premium = false
+handler.premium = true 
 
 handler.group = true 
 
