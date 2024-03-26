@@ -2,6 +2,35 @@
 
 let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isROwner }) => {
 	
+const sections = [
+   {
+	title: `≡ List of options`,
+	rows: [
+	{title: "🔮 | Welcome", rowId: `${usedPrefix + command} welcome`},
+	{title: "🌎 | Public", rowId: `${usedPrefix + command} public`},
+	{title: "🔞 | Nsfw", rowId: `${usedPrefix + command} nsfw`},
+	{title: "🧬 | OnlyEnglish", rowId: `${usedPrefix + command} onlyenglish`},
+	{title: "🔗 | Antilink", rowId: `${usedPrefix + command} antilink`},
+    {title: "🚫 | Antidelete", rowId: `${usedPrefix + command} antidelete`},
+    {title: "🖼 | Autosticker", rowId: `${usedPrefix + command} autosticker`},
+	{title: "⏏️ | Autolevelup", rowId: `${usedPrefix + command} autolevelup`},
+	{title: "🗣️ | ChatBot", rowId: `${usedPrefix + command} chatbot`},
+	{title: "🔎 | Detect", rowId: `${usedPrefix + command} detect`},
+	{title: "📑 | Document", rowId: `${usedPrefix + command} document`},
+	{title: "🛡️ | Restrict", rowId: `${usedPrefix + command} restrict`},
+	{title: "💬 | OnlyPvivate", rowId: `${usedPrefix + command} onlydm`},
+	{title: "👥 | OnlyGroup", rowId: `${usedPrefix + command} onlygp`}
+	]
+    },
+]
+
+const listMessage = {
+  text: '\nHere is a list of what you can turn on and off',
+  footer: igfg,
+  title: `≡ List of options`,
+  buttonText: "Click here",
+  sections
+}
 
   let isEnable = /true|enable|(turn)?on|1/i.test(command)
   let chat = global.db.data.chats[m.chat]
@@ -11,6 +40,8 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
   let isAll = false, isUser = false
   switch (type) {
     case 'welcome':
+    case 'bv':
+    case 'bienvenida':
       if (!m.isGroup) {
         if (!isOwner) {
           global.dfail('group', m, conn)
@@ -22,31 +53,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       }
       chat.welcome = isEnable
       break
-     case 'jarvis':
-     case 'autotalk':
-      if (m.isGroup) {
-        if (!(isAdmin || isOwner)) {
-          global.dfail('admin', m, conn)
-           throw false
-          }}
-      chat.jarvis = isEnable
-     break
-	case 'pmblocker':
-isAll = true
-if (!isROwner) {
-global.dfail('rowner', m, conn)
-throw false
-}
-bot.pmblocker = isEnable
-break	  
-case 'autobio':
-  isAll = true
-  if (!isROwner) {
-  global.dfail('rowner', m, conn)
-  throw false
-  }
-  bot.autoBio = isEnable
-  break	 
+      
       case 'detect':
       case 'detector':
         if (!m.isGroup) {
@@ -69,15 +76,6 @@ case 'autobio':
       }
       chat.autosticker = isEnable
       break
-      case 'antispam':
-      if (m.isGroup) {
-        if (!(isAdmin || isOwner)) {
-          global.dfail('admin', m, conn)
-          throw false
-        }
-      }
-      chat.antiSpam = isEnable
-      break
     case 'antidelete':
     case 'delete':
       if (m.isGroup) {
@@ -88,16 +86,6 @@ case 'autobio':
       }
       chat.delete = !isEnable
       break
-      case 'antitoxic':
-    case 'antibadword':
-      if (m.isGroup) {
-        if (!(isAdmin || isOwner)) {
-          global.dfail('admin', m, conn)
-          throw false
-        }
-      }
-      chat.antiToxic = isEnable
-      break
 
     case 'document':
     case 'documento':
@@ -106,15 +94,15 @@ case 'autobio':
       }
     chat.useDocument = isEnable
     break
-    case 'autostatus':
+    case 'public':
+    case 'publico':
       isAll = true
       if (!isROwner) {
         global.dfail('rowner', m, conn)
         throw false
       }
-      chat.viewStory = isEnable
+      global.opts['self'] = !isEnable
       break
-
     case 'antilink':
     case 'antilinkwa':
     case 'antilinkwha':
@@ -127,6 +115,20 @@ case 'autobio':
       chat.antiLink = isEnable
       break
       
+      case 'soloenglish':
+      case 'sololatin':
+      case 'onlyenglishs':
+      case 'onlyeng':
+      case 'onlyenglish':
+      case 'soloenglish':
+      if (m.isGroup) {
+        if (!(isAdmin || isOwner)) {
+          global.dfail('admin', m, conn)
+          throw false
+        }
+      }
+      chat.onlyenglish = isEnable
+      break
       
       case 'nsfw':
       case '+18':
@@ -144,14 +146,11 @@ case 'autobio':
      break
      
      case 'chatbot':
-      if (m.isGroup) {
-        if (!(isAdmin || isOwner)) {
-          global.dfail('admin', m, conn)
-          throw false
-        }
-      }
-      chat.chatbot = isEnable
-      break
+     case 'autosimi':
+     case 'autosimsimi':
+      isUser = true
+      user.chatbot = isEnable
+     break
      
     case 'restrict':
     case 'restringir':
@@ -162,25 +161,7 @@ case 'autobio':
       }
       bot.restrict = isEnable
       break
-      case 'autotype':
-    case 'alwaysonline':
-      isAll = true
-      if (!isOwner) {
-        global.dfail('owner', m, conn)
-        throw false
-      }
-      chat.autotype = isEnable
-      break
-      
-      case 'anticall':
-        case 'nocall':
-          isAll = true
-          if (!isOwner) {
-            global.dfail('owner', m, conn)
-            throw false
-          }
-          bot.antiCall = isEnable
-          break
+    
     case 'onlypv':
     case 'onlydm':
     case 'onlymd':
@@ -210,32 +191,39 @@ case 'autobio':
      if (!/[01]/.test(command)) return m.reply(`
 ≡ List of options
 
-◈──『 *ADMIN*』───⳹
-⛊ welcome
-⛊ antilink
-⛊ nsfw
-⛊ autosticker
-⛊ detect
-⛊ jarvis
-⛊ antispam
-⛊ antitoxic
-╰──────────⳹ 
-◈──『 *USERS*』───⳹
-⛊ autolevelup
-⛊ chatbot 
-╰──────────⳹
-◈──『 *OWNER*』───⳹
-⛊ onlydm
-⛊ grouponly
-⛊ autotype
-⛊ autobio
-╰──────────⳹
+┌─⊷ *ADMIN*
+▢ welcome
+▢ antilink
+▢ nsfw
+▢ onlyenglish
+▢ autosticker
+▢ detect
+▢ antidelete
+└───────────── 
+┌─⊷ *USERS*
+▢ autolevelup
+▢ chatbot 
+└─────────────
+┌─⊷ *OWNER*
+▢ public
+▢ onlydm
+▢ grouponly
+└─────────────
 *📌 Example :*
 *${usedPrefix}on* welcome
 *${usedPrefix}off* welcome
 `)
       throw false
   }
+  /*conn.sendButton(m.chat, `
+≡ *OPTIONS*
+┌───────────
+▢ 🗂️ *Type:* ${type} 
+▢ ⚙️ *Condition:* ${isEnable ? 'Active ✅' : 'Deactive 🔴'}
+▢ 🏮 *For:* ${isAll ? 'this bot' : isUser ? '' : 'this chat'}
+└───────────
+`,igfg, null, [[`${isEnable ? '🔴 Deactive' : '✅ Active'}`, `${isEnable ? `${usedPrefix}off ${type}` : `${usedPrefix}on ${type}`}`], ['⦙☰ Menu', `${usedPrefix}help`]],m)
+*/
 
 m.reply(`
 ✅ *${type}* Now *${isEnable ? 'Active' : 'Deactive'}* ${isAll ? 'for this bot' : isUser ? '' : 'for this bot'}
@@ -243,9 +231,8 @@ m.reply(`
 
 }
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
-handler.tags = ['config']
+handler.tags = ['nable']
 handler.command = /^((en|dis)able|(turn)?o(n|ff)|[01])$/i
-handler.owner = true 
 handler.group = true 
 
 export default handler
