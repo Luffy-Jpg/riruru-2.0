@@ -189,29 +189,7 @@ const listMessage = {
       
     default:
      if (!/[01]/.test(command)) return m.reply(`
-≡ List of options
-
-┌─⊷ *ADMIN*
-▢ welcome
-▢ antilink
-▢ nsfw
-▢ onlyenglish
-▢ autosticker
-▢ detect
-▢ antidelete
-└───────────── 
-┌─⊷ *USERS*
-▢ autolevelup
-▢ chatbot 
-└─────────────
-┌─⊷ *OWNER*
-▢ public
-▢ onlydm
-▢ grouponly
-└─────────────
-*📌 Example :*
-*${usedPrefix}on* welcome
-*${usedPrefix}off* welcome
+🥺 Huh! 
 `)
       throw false
   }
@@ -231,8 +209,8 @@ m.reply(`
 
 }
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
-handler.tags = ['nable']
-handler.command = /^((en|dis)able|(turn)?o(n|ff)|[01])$/i
+handler.tags = ['Jarvis-ChatBot']
+handler.command = /^((en|dis)able|(turn)?jarvis-o(n|ff)|[01])$/i
 handler.group = true 
 
 export default handler
