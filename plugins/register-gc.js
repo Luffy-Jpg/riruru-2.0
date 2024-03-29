@@ -5,7 +5,7 @@ let Reg = /\|?(.*)([.|] *?)([0-9]*)$/i
 let handler = async function (m, { conn, text, usedPrefix, command }) {
   let user = global.db.data.users[m.sender]
   let name2 = conn.getName(m.sender)
-  if (user.registered === true) throw `✳️ You are already registered\n\nDo you want to re-register?\n\n 📌 Use this command to remove your record \n*${usedPrefix}unreg* <Serial number>`
+  if (user.registered === true) throw `This user is already registered in Jarvis DataBase. Contact the Developer for any support.`
   if (!Reg.test(text)) throw `⚠️ Format incorrect\n\n ✳️ Use this command: *${usedPrefix + command} name.age*\n📌Exemple : *${usedPrefix + command}* ${name2}.16`
   let [_, name, splitter, age] = text.match(Reg)
   if (!name) throw '✳️ The name cannot be empty'
