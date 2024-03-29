@@ -726,7 +726,7 @@ global.dfail = (type, m, conn) => {
         owner: ``,
         moderator: `*${emoji.moderator} Moderator's Query*\n
     ${userTag} This command can only be used by *Moderators*!`,
-        premium: `You are currently not allowed to use this feature! You need to upgrade your account.`,
+        premium: `You are currently not allowed to use this feature! You need to upgrade your account.\nType\n*/prem-list*\nTo see the allowed members.`,
         group: ``,
         private: `*${emoji.private} Private Query*\n
     ${userTag} This command can only be used in *Private Chats*!`,
