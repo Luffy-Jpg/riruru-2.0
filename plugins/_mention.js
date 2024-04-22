@@ -25,7 +25,7 @@ handler.all = async function (m, conn) {
           mentionedJid: [m.sender],
           externalAdReply: {
           title: `‎‎Hello! ${m.name}`,
-          body: "Current status : Extremely busy",
+          body: "Current status : ARJU is Extremely busy",
           thumbnailUrl: img,
           sourceUrl: url,
           mediaType: 1,
