@@ -39,6 +39,6 @@ handler.help = ['instagram'];
 handler.tags = ['downloader'];
 handler.command = /^(instagram|igdl|ig|insta)$/i;
 handler.group = true;
-handler.premium = false;
+handler.premium = true;
 handler.register = true;
 export default handler;
