@@ -36,7 +36,7 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
     `error.mp4`,
     caption,
     m,
-    false,
+    true,
     { asDocument: chat.useDocument }
   );
      
