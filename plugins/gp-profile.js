@@ -40,7 +40,7 @@ Account ➳ ${prem ? '*This is Premium account*' : '*This account is not Premium
 
 ~°                                        °~
 
-*Developer : ARJU*\n*Contact : wa.me/919131652091* 
+*Developer : ARJU*\n*Contact : wa.me/919131xxxxxx* 
 `
     conn.sendFile(m.chat, pp, 'profil.jpg', str, m, false, { mentions: [who] })
     m.react(done)
