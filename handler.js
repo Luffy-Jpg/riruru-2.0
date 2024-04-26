@@ -144,7 +144,7 @@ export async function handler(chatUpdate) {
                 if (!("sPromote" in chat)) chat.sPromote = ""
                 if (!("sWelcome" in chat)) chat.sWelcome = ""
                 if (!("useDocument" in chat)) chat.useDocument = false
-                if (!("viewOnce" in chat)) chat.viewOnce = false
+                if (!("viewOnce" in chat)) chat.viewOnce = true
                 if (!("viewStory" in chat)) chat.viewStory = false
                 if (!("welcome" in chat)) chat.welcome = false
                 if (!("chatbot" in chat)) chat.chatbot = false 
@@ -167,7 +167,7 @@ export async function handler(chatUpdate) {
                     sticker: false,
                     sWelcome: "",
                     useDocument: false,
-                    viewOnce: false,
+                    viewOnce: true,
                     viewStory: false,
                     welcome: false,
                     chatbot: false 
@@ -723,10 +723,10 @@ global.dfail = (type, m, conn) => {
     }
 
     const msg = {
-        owner: `error 409`,
+        owner: `:)`,
         moderator: `*${emoji.moderator} Moderator's Query*\n
     ${userTag} This command can only be used by *Moderators*!`,
-        premium: `error 404`,
+        premium: `:)`,
         group: ``,
         private: `*${emoji.private} Private Query*\n
     ${userTag} This command can only be used in *Private Chats*!`,
