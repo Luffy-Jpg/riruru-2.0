@@ -2,30 +2,50 @@ import { watchFile, unwatchFile } from 'fs'
 import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 import fs from 'fs'
-import fetch from 'node-fetch'
-import axios from 'axios'
+
+import dotenv from 'dotenv'
+dotenv.config()
+
+const ownervb = process.env.OWNERS || "919131652091;ARJU"
 
 
-global.owner = [
-  ['919131652091', 'ARJU', true] 
-] //Number of owners
+const ownerlist = ownervb.split(';');
 
-//global.pairingNumber = "919301381237" //put your bot number here
+global.owner = [];
+for (let i = 0; i < ownerlist.length; i += 2) {
+    const owner = [
+        ownerlist[i],            
+        ownerlist[i + 1],         
+        true                        
+    ];
+    global.owner.push(owner);
+}
 
-global.mods = ['919131652091'] 
+//global.pairingNumber = "" //put your bot number here
+
+global.mods = ['919131652091']
 global.prems = ['919131652091']
 global.allowed = ['919131652091']
 global.keysZens = ['c2459db922', '37CC845916', '6fb0eff124']
 global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
-global.keysxteammm = ['29d4b59a4aa687ca', '5LTV57azwaid7dXfz5fzJu', 'cb15ed422c71a2fb', '5bd33b276d41d6b4', 'HIRO', 'kurrxd09', 'ebb6251cc00f9c63']
+global.keysxteammm = [
+  '29d4b59a4aa687ca',
+  '5LTV57azwaid7dXfz5fzJu',
+  'cb15ed422c71a2fb',
+  '5bd33b276d41d6b4',
+  'HIRO',
+  'kurrxd09',
+  'ebb6251cc00f9c63',
+]
 global.keysxteam = keysxteammm[Math.floor(keysxteammm.length * Math.random())]
 global.keysneoxrrr = ['5VC9rvNx', 'cfALv5']
 global.keysneoxr = keysneoxrrr[Math.floor(keysneoxrrr.length * Math.random())]
 global.lolkeysapi = ['GataDios']
 
-global.APIs = { // API Prefix
+global.APIs = {
+  // API Prefix
   // name: 'https://website'
-  xteam: 'https://api.xteam.xyz', 
+  xteam: 'https://api.xteam.xyz',
   dzx: 'https://api.dhamzxploit.my.id',
   lol: 'https://api.lolhuman.xyz',
   violetics: 'https://violetics.pw',
@@ -35,42 +55,42 @@ global.APIs = { // API Prefix
   akuari2: 'https://apimu.my.id',
   nrtm: 'https://fg-nrtm.ddns.net',
   bg: 'http://bochil.ddns.net',
-  fgmods: 'https://api-fgmods.ddns.net'
+  fgmods: 'https://api-fgmods.ddns.net',
 }
-global.APIKeys = { // APIKey Here
+global.APIKeys = {
+  // APIKey Here
   // 'https://website': 'apikey'
   'https://api.xteam.xyz': 'd90a9e986e18778b',
   'https://api.lolhuman.xyz': '85faf717d0545d14074659ad',
-  'https://api.neoxr.my.id': `${keysneoxr}`,	
+  'https://api.neoxr.my.id': `${keysneoxr}`,
   'https://violetics.pw': 'beta',
-  'https://zenzapis.xyz': `${keysxxx}`, 
-  'https://api-fgmods.ddns.net': 'fg-dylux'
+  'https://zenzapis.xyz': `${keysxxx}`,
+  'https://api-fgmods.ddns.net': 'fg-dylux',
 }
 
 // Sticker WM
-global.botname = 'Riruru V-5 BOT'
+global.botname = process.env.BOTNAME
 global.premium = 'true'
-global.author = 'DEVELOPER_ARJU' 
-global.packname = '' 
+global.packname = ''
+global.author = 'RIRURU'
 global.menuvid = 'https://imgur.com/HH0g2sa.mp4'
-global.igfg = 'https://bot-support.vercel.app' 
-global.dygp = 'https://bot-support.vercel.app'
-global.fgsc = 'https://bot-support.vercel.app' 
-global.fgyt = 'https://bot-support.vercel.app'
-global.fgpyp = 'https://bot-support.vercel.app'
-global.fglog = 'https://bot-support.vercel.app' 
-global.thumb = fs.readFileSync('./bot.jpg')
+global.igfg = 'https://bot-support.vercel.app/'
+global.dygp = 'https://bot-support.vercel.app/'
+global.fgsc = 'https://bot-support.vercel.app/'
+global.fgyt = 'https://bot-support.vercel.app/'
+global.fgpyp = 'https://bot-support.vercel.app/'
+global.fglog = 'https://bot-support.vercel.app/'
+global.thumb = fs.readFileSync('bot.jpg')
 
+global.wait = '> Loading...'
+global.rwait = '⌛'
+global.dmoji = '🤭'
+global.done = '✅'
+global.error = '❌'
+global.xmoji = '🔥'
 
-global.wait = 'Please wait...'
-global.rwait = '🎼'
-global.dmoji = '🍁'
-global.done = '🗿'
-global.error = '🥲' 
-global.xmoji = '💀' 
-
-global.multiplier = 69 
-global.maxwarn = '3' 
+global.multiplier = 69
+global.maxwarn = '3'
 
 let file = fileURLToPath(import.meta.url)
 watchFile(file, () => {
