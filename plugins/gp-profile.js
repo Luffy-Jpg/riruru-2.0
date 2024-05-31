@@ -16,31 +16,30 @@ let prem = global.prems.includes(who.split`@`[0])
 let sn = createHash('md5').update(who).digest('hex')
 let ttms = `${user.exp}` / 20;  
 // • @${who.replace(/@.+/, '')}
-let str = `Username ➳ ${username}${about ? '\n\nCurrent about ➳ ' + about : ''}
+let str = `> Username ➳ ${username}${about ? '\n\n> Current about ➳ ' + about : ''}
 
-Age ➳ ${age} 
+> Age ➳ ${age} 
 
-Warnings ➳ ${warn}/${maxwarn}
+> Warnings ➳ ${warn}/${maxwarn}
 
-Gold ➳ ${credit}
+> Gold ➳ ${credit}
 
-User ➳ *Official WhatsApp*
+> User ➳ *Official WhatsApp*
 
-Level ➳ ${level}
+> Level ➳ ${level}
 
-Xp ➳ ${user.exp - min} 
+> Xp ➳ ${user.exp - min} 
 
-Rank ➳ ${role}
+> Rank ➳ ${role}
 
-User Close Points ➳ *${ttms}*
+> User Close Points ➳ *${ttms}*
 
-Registered ➳ ${registered ? 'true': 'false'}
+> Registered ➳ ${registered ? 'true': 'false'}
 
-Account ➳ ${prem ? '*This is Premium account*' : '*This account is not Premium*'}
+> Legend ➳ ${prem ? '*true*' : '*false*'}
 
 ~°                                        °~
-
-*Developer : ARJU*\n*Contact : wa.me/919131xxxxxx* 
+\n*website : https://bot-support.vercel.app*
 `
     conn.sendFile(m.chat, pp, 'profil.jpg', str, m, false, { mentions: [who] })
     m.react(done)
