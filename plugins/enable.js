@@ -209,8 +209,8 @@ m.reply(`
 
 }
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
-handler.tags = ['Jarvis-ChatBot']
-handler.command = /^((en|dis)able|(turn)?jarvis-o(n|ff)|[01])$/i
+handler.tags = ['Riruru-ChatBot']
+handler.command = /^((en|dis)able|(turn)?riruru-o(n|ff)|[01])$/i
 handler.group = true
 handler.premium = true 
 
