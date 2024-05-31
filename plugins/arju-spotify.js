@@ -1,12 +1,12 @@
 import fetch from 'node-fetch'
-import displayLoadingScreen from '../lib/loading.js'
+
 let handler = async (m, { conn, text }) => {
   if (!text) {
     console.log('No song name provided.')
     throw `*Please enter a song name*`
   }
-  m.react('🎶')
-  await displayLoadingScreen(conn, m.chat)
+  m.react('🥀')
+  
   let pp = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAVeju5sp9FM0iRkRrkDBEa8y0W71XmGFw40RoaVXBKjPYrunyGLmTbDw&s=10'
   const query = encodeURIComponent(text)
   let res = `https://guruapi.tech/api/spotifydl?url=${query}`
