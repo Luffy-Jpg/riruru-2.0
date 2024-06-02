@@ -1,28 +1,44 @@
-import fg from 'api-dylux'
+import fetch from 'node-fetch'
 
-let handler  = async (m, { conn, args, text, usedPrefix, command }) => {
+let handler = async (m, { conn, text, usedPrefix, command }) => {
+  if (!text && !(m.quoted && m.quoted.text)) {
+    throw `Please provide some text , Example usage ${usedPrefix}img riruru`
+  }
+  if (!text && m.quoted && m.quoted.text) {
+    text = m.quoted.text
+  }
 
-  if (!text) throw `Image not found\n\n📌 Example: *${usedPrefix + command}* sunny leone`
+  const match = text.match(/(\d+)/)
+  const numberOfImages = match ? parseInt(match[1]) : 1
 
-  let res = await fg.googleImage(text)
+  try {
+    m.reply('*Please wait*')
 
-  conn.sendFile(m.chat, res.getRandom(), 'img.png', `
+    const images = []
 
-✅ Results : *${text}*`.trim(), m)
+    for (let i = 0; i < numberOfImages; i++) {
+      const endpoint = `https://api.guruapi.tech/api/googleimage?text=${encodeURIComponent(text)}`
+      const response = await fetch(endpoint)
 
+      if (response.ok) {
+        const imageBuffer = await response.buffer()
+        images.push(imageBuffer)
+      } else {
+        throw '*Image generation failed*'
+      }
+    }
+
+    for (let i = 0; i < images.length; i++) {
+      await conn.sendFile(m.chat, images[i], `image_${i + 1}.png`, null, m)
+    }
+  } catch {
+    throw '*Oops! Something went wrong while generating images. Please try again later.*'
+  }
 }
 
-handler.help = ['imagen']
-
-handler.tags = ['img']
-
-handler.command = /^(img|image|gimage|imagen)$/i
-
-handler.premium = true 
-
-handler.group = true 
+handler.help = ['image']
+handler.tags = ['fun']
+handler.command = ['img', 'gimage']
+handler.group = true
 
 export default handler
-
-
-
