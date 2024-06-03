@@ -16,32 +16,27 @@ let handler = async (m, { conn, usedPrefix, command}) => {
     let sn = createHash('md5').update(who).digest('hex');
     let ttms = `${user.exp}` / 20;  
 
-    let profileText = `👤 *Username*: ${username}
+    let profileText = `
+👤 *Username*: ${username}
 📝 *About*: ${about || 'Not set'}
-
 🎂 *Age*: ${age} 
-
 ⚠️ *Warnings*: ${warn}/${maxwarn}
-
 💰 *Gold*: ${credit}
-
 🆔 *User*: *Official WhatsApp*
-
 🏆 *Level*: ${level}
-
 📊 *XP*: ${user.exp - min} 
-
 🥇 *Rank*: ${role}
-
 🌟 *Special Achievements*: ${prem ? 'Premium User' : 'None'}
-
 🔗 *Registered*: ${registered ? 'Yes' : 'No'}
-
 🔍 *User Close Points*: *${ttms}*
 
 ---
 
-[Visit My Website](https://bot-support.vercel.app)`;
+[Visit My Website](https://bot-support.vercel.app)
+
+Contact on WhatsApp:
+[![WhatsApp](https://img.shields.io/badge/Chat%20on%20WhatsApp-Click%20Here-25D366?style=for-the-badge&logo=whatsapp)](https://wa.me/919131652091)
+`;
 
     conn.sendFile(m.chat, pp, 'profile.jpg', profileText, m, false, { mentions: [who] });
     m.react('✅');
