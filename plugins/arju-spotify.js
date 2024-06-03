@@ -1,28 +1,26 @@
-import fetch from 'node-fetch'
+import fetch from 'node-fetch';
 
-let handler = async (m, { conn, text }) => {
+let handler = async (message, { conn, text }) => {
   if (!text) {
-    console.log('No song name provided.')
-    throw `*Please enter a song name*`
+    console.log('No song name provided.');
+    throw `*Please enter a song name*`;
   }
-  m.react('🥀')
+  message.react('🥀');
   
-  let pp = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAVeju5sp9FM0iRkRrkDBEa8y0W71XmGFw40RoaVXBKjPYrunyGLmTbDw&s=10'
-  const query = encodeURIComponent(text)
-  let res = `https://guruapi.tech/api/spotifydl?url=${query}`
-  // let spotify = await (await fetch(res)).buffer()
-    let Riruru = `https://bot-support.vercel.app`
+  let pp = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAVeju5sp9FM0iRkRrkDBEa8y0W71XmGFw40RoaVXBKjPYrunyGLmTbDw&s=10';
+  const query = encodeURIComponent(text);
+  let res = `https://guruapi.tech/api/spotifydl?url=${query}`;
+  // let spotify = await (await fetch(res)).buffer();
+  let Riruru = `https://bot-support.vercel.app`;
   let doc = {
     audio: {
       url: res,
     },
-    mimetype: 'audio/mpeg',
-    ptt: true,
-    waveform: [100, 0, 100, 0, 100, 0, 100],
+    mimetype: 'audio/mp4',
+    ptt: false,
     fileName: 'Riruru.mp3',
-
     contextInfo: {
-      mentionedJid: [m.sender],
+      mentionedJid: [message.sender],
       externalAdReply: {
         title: '↺ |◁   II   ▷|   ♡',
         body: `Now playing: ${text}`,
@@ -32,14 +30,22 @@ let handler = async (m, { conn, text }) => {
         renderLargerThumbnail: true,
       },
     },
-  }
+  };
 
-  await conn.sendMessage(m.chat, doc, { quoted: m })
-}
-handler.help = ['spotify']
-handler.tags = ['downloader']
-handler.command = /^(spotify|song)$/i
-handler.group = true 
-handler.premium = true
+  // Adding a WhatsApp button
+  const button = {
+    buttonText: 'Open in WhatsApp',
+    type: 1,
+    url: Riruru,
+  };
 
-export default handler
+  await conn.sendMessage(message.chat, doc, { quoted: message, buttons: [{ button }] });
+};
+
+handler.help = ['spotify'];
+handler.tags = ['downloader'];
+handler.command = /^(spotify|song)$/i;
+handler.group = true;
+handler.premium = true;
+
+export default handler;
