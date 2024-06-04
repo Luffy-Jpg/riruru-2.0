@@ -12,4 +12,5 @@ let handler = async (m, { text, conn }) => {
 handler.help = ['', 'code'].map(v => 'qr' + v + ' <text>')
 handler.tags = ['tools']
 handler.command = /^qr(code)?$/i
+handler.group = true
 export default handler
