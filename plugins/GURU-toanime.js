@@ -27,5 +27,5 @@ handler.help = ['toanime']
 handler.tags = ['AI']
 handler.premium = true
 handler.command = /^(imganime|toanime)$/i
-handler.group
+handler.group = true
 export default handler
