@@ -22,9 +22,9 @@ let handler = async (m, { conn, usedPrefix }) => {
     wealth = 'Rich💸💰'
   } else if (`${user.bank}` <= 10000000) {
     wealth = 'Millionaire🤑'
-  } else if (`${user.bank}` <= 1000000000) {
+  } else if (`${user.bank}` <= 100000000000000000) {
     wealth = 'Multi-Millionaire🤑'
-  } else if (`${user.bank}` <= 10000000000) {
+  } else if (`${user.bank}` <= 10000000000000000000000000000000000000000000000000) {
     wealth = 'Billionaire🤑🤑'
   }
 
@@ -44,5 +44,6 @@ let handler = async (m, { conn, usedPrefix }) => {
 handler.help = ['bank']
 handler.tags = ['economy']
 handler.command = ['bank', 'vault']
+handler.group = true
 
 export default handler
