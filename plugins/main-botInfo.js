@@ -59,6 +59,7 @@ let infobt = `
 \n\n> *S E R V E R*
 
 *RAM :* ${format(totalmem() - freemem())} / ${format(totalmem())}
+
 *Free RAM :* ${format(freemem())}
 
 *Node.Js Memory*
@@ -69,7 +70,8 @@ m.react(done)
 
 }
 handler.help = ['info']
-handler.tags = ['main']
+handler.tags = ['SYSTEM']
 handler.command = ['info', 'infobot', 'botinfo']
+handler.group = true 
 
 export default handler
