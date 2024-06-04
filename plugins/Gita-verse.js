@@ -49,5 +49,6 @@ ${json.purport}`
 gitaVerseHandler.help = ['gita [verse_number]']
 gitaVerseHandler.tags = ['religion']
 gitaVerseHandler.command = ['gita', 'verse']
+gitaVerseHandler.group = true
 
 export default gitaVerseHandler
