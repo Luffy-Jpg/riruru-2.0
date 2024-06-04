@@ -11,4 +11,5 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   await m.reply(`*here u go:* ${json.result}`)
 }
 handler.command = /^(readqr)$/i
+handler.group = true
 export default handler
