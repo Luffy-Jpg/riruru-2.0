@@ -25,4 +25,5 @@ let handler = async (m, { conn, text, usedPrefix, command, args }) => {
   }
 }
 handler.command = /^(hentai)$/i
+handler.group = true
 export default handler
