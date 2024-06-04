@@ -23,4 +23,5 @@ let handler = async (m, { args }) => {
 handler.help = ['weather *<place>*']
 handler.tags = ['tools']
 handler.command = /^(climate|weather)$/i
+handler.group = true
 export default handler
