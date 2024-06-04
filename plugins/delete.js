@@ -13,7 +13,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 handler.help = ['delete']
 handler.tags = ['group']
 handler.command = /^del(ete)?$/i
-handler.group = true
+handler.group = false
 handler.owner = true
 
 export default handler
