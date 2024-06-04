@@ -23,6 +23,6 @@ let handler = async (m, { conn, text }) => {
 handler.help = ['addgold <@user>']
 handler.tags = ['economy']
 handler.command = ['addgold']
-handler.rowner = true
+handler.owner = true
 
 export default handler
