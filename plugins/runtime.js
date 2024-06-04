@@ -40,7 +40,7 @@ export default handler
 function clockString(ms) {
   let d = isNaN(ms) ? '--' : Math.floor(ms / 86400000)
   let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000) % 24
-  let m = isNaN(ms) ? '--' : Math.floor(ms / 6000) % 60
+  let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-  return [d, '\n*days*\n\n\n ', h, '\n*hours*\n\n\n ', m, '\n*minutes*\n\n\n ', s, '\n*Second*\n\n\n '].map(v => v.toString().padStart(2, 0)).join('')
+  return [d, 'd ', h, 'h ', m, 'm ', s, 's '].map(v => v.toString().padStart(2, 0)).join('')
 }
