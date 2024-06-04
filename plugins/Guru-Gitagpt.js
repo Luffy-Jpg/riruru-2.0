@@ -27,6 +27,7 @@ let gitagptHandler = async (m, { text, usedPrefix, command }) => {
 gitagptHandler.help = ['gitagpt']
 gitagptHandler.tags = ['AI']
 gitagptHandler.command = ['gitagpt']
-gitagptHandler.diamond = false
+gitagptHandler.premium = true
+handler.group = true
 
 export default gitagptHandler
