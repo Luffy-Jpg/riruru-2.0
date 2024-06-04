@@ -51,5 +51,6 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
 handler.help = ['aisearch']
 handler.tags = ['AI']
 handler.command = ['aisearch', 'ai2']
+handler.group = true
 
 export default handler
