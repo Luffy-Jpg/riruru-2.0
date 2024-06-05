@@ -30,11 +30,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 
   conn.reply(
     m.chat,
-    `🏦 *Bank | ${username}*
-
-*🪙 Gold* : ${user.bank}
-
-*Wealth :* ${wealth}
+    `🏦 *Bank | ${username}*\n\n*🪙 Credit* : ${user.bank}\n\n*Wealth :* ${wealth}
 
 `,
     m,
