@@ -1,4 +1,4 @@
-import '@open-wa/whatsapp-button/whatsapp-button.js';
+
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 let img = 'https://i.postimg.cc/N0gPt8Kz/IMG-20240120-WA0198.jpg'
