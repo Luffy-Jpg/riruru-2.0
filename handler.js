@@ -147,7 +147,7 @@ export async function handler(chatUpdate) {
                 if (!("viewOnce" in chat)) chat.viewOnce = true
                 if (!("viewStory" in chat)) chat.viewStory = false
                 if (!("welcome" in chat)) chat.welcome = false
-                if (!("chatbot" in chat)) chat.chatbot = false 
+                if (!("chatbot" in chat)) chat.chatbot = true
                 if (!isNumber(chat.expired)) chat.expired = 0
             } else
                 global.db.data.chats[m.chat] = {
@@ -170,7 +170,7 @@ export async function handler(chatUpdate) {
                     viewOnce: true,
                     viewStory: false,
                     welcome: false,
-                    chatbot: false 
+                    chatbot: true 
                 }
           
                 
