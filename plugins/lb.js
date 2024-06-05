@@ -84,7 +84,7 @@ ${sortedExp
 handler.help = ['leaderboard']
 handler.tags = ['L-B']
 handler.command = ['leaderboard', 'lb']
-handler.group
+handler.group = true 
 
 export default handler
 
