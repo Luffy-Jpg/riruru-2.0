@@ -31,8 +31,6 @@ let img = 'https://i.postimg.cc/N0gPt8Kz/IMG-20240120-WA0198.jpg'
       ShowAdAttribution: true, 
       renderLargerThumbnail: true
       }}})
-  <whatsapp-button phone="7712345678" dialcode="44" text="hey there lets chat!" label="Start Chat"></whatsapp-button>
-  <whatsapp-button phone="7712345678" dialcode="44" text="hey there lets chat!" label="Start Chat" bypass></whatsapp-button>
 }
 handler.help = ['runtime']
 handler.tags = ['SYSTEM']
@@ -45,5 +43,5 @@ function clockString(ms) {
   let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000) % 24
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
-  return [d, 'd ', h, 'h ', m, 'm ', s, 's '].map(v => v.toString().padStart(2, 0)).join('')
+  return [\n\nd, 'd ', h\n\n, 'h ', m\n\n, 'm ', s\n\n, 's '].map(v => v.toString().padStart(2, 0)).join('')
 }
