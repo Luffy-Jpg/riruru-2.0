@@ -42,8 +42,6 @@ let str = `
 
  *𓆩 Credit :* ${credit}
 
- *𓆩 Owner :* ${owner} 
-
  *𓆩 Bank :* ${bank} 
 
  *𓆩 Registered :* ${registered ? 'Yes': 'No'}
@@ -55,7 +53,7 @@ let str = `
     m.react(done)
 
 }
-handler.help = ['perfil']
+handler.help = ['profile']
 handler.tags = ['group']
 handler.command = ['profile', 'perfil']
 handler.group = true 
