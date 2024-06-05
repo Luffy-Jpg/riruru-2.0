@@ -7,9 +7,9 @@ let handler = async (m, { conn, usedPrefix, command}) => {
 
 let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 if (!(who in global.db.data.users)) throw `✳️ The user is not found in my database`
-let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './src/avatar_contact.png')
+let pp = await conn.profilePictureUrl(who, 'image').catch(_ => './bot.jpg')
 let user = global.db.data.users[who]
-let { name, exp, diamond, lastclaim, registered, regTime, age, level, role, warn } = global.db.data.users[who]
+let { name, exp, diamond, lastclaim, registered, regTime, age, level, role, warn, gold, credit, owner, bank} = global.db.data.users[who]
 let { min, xp, max } = xpRange(user.level, global.multiplier)
 let username = conn.getName(who)
 let math = max - xp
@@ -17,30 +17,40 @@ let prem = global.prems.includes(who.split`@`[0])
 let sn = createHash('md5').update(who).digest('hex')
 
 let str = `
-┌───「 *PROFILE* 」
-▢ *🔖 Name:* 
+◆━━━━━✥ *PROFILE* ✥━━━━━◆
+
+ *𓆩 Name :* 
 
    • ${username} ${registered ? '\n   • ' + name + ' ': ''}
    • @${who.replace(/@.+/, '')}
    
-▢ *📱Number:* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
+ *𓆩 Number :* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
 
-▢ *🔗Link:* wa.me/${who.split`@`[0]}${registered ? '\n▢ *🎈Age*: ' + age + ' years' : ''}
+ *𓆩 Link :* wa.me/${who.split`@`[0]}${registered ? '\n𓆩 *🎈Age*: ' + age + ' years' : ''}
 
-▢ *⚠️warn:* ${warn}/${maxwarn}
+ *𓆩 warn :* ${warn}/${maxwarn}
 
-▢ *💎 Diamonds :* ${diamond}
+ *𓆩 Age :* ${age}
 
-▢ *🆙 Level* : ${level}
+ *𓆩 Level :* ${level}
 
-▢ *⬆️ XP* : Total ${exp} (${user.exp - min} / ${xp})\n${math <= 0 ? `ready for *${usedPrefix}levelup*` : `_*${math}xp*_ Missing to level up`}
+ *𓆩 XP :* Total ${exp} (${user.exp - min} / ${xp}) 
 
-▢ *🏆Role:* ${role}
+ *𓆩 Role :* ${role}
 
-▢ *📇 Registered :* ${registered ? 'Yes': 'No'}
+ *𓆩 Gold :* ${gold}
 
-▢ *⭐ Premium* : ${prem ? 'Yes' : 'No'}
-└──────────────`
+ *𓆩 Credit :* ${credit}
+
+ *𓆩 Owner :* ${owner} 
+
+ *𓆩 Bank :* ${bank} 
+
+ *𓆩 Registered :* ${registered ? 'Yes': 'No'}
+
+ *𓆩 Premium :* ${prem ? 'Yes' : 'No'} 
+ 
+◆━━━━━✥ *Made with ♥️* ✥━━━━━◆
     conn.sendFile(m.chat, pp, 'perfil.jpg', str, m, false, { mentions: [who] })
     m.react(done)
 
