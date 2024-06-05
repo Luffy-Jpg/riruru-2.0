@@ -1,3 +1,4 @@
+import '@open-wa/whatsapp-button/whatsapp-button.js';
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 let img = 'https://i.postimg.cc/N0gPt8Kz/IMG-20240120-WA0198.jpg'
@@ -30,6 +31,8 @@ let img = 'https://i.postimg.cc/N0gPt8Kz/IMG-20240120-WA0198.jpg'
       ShowAdAttribution: true, 
       renderLargerThumbnail: true
       }}})
+  <whatsapp-button phone="7712345678" dialcode="44" text="hey there lets chat!" label="Start Chat"></whatsapp-button>
+  <whatsapp-button phone="7712345678" dialcode="44" text="hey there lets chat!" label="Start Chat" bypass></whatsapp-button>
 }
 handler.help = ['runtime']
 handler.tags = ['SYSTEM']
