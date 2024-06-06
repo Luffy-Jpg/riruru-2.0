@@ -1,7 +1,7 @@
 let handler = async (m) =>
   m.reply(
     `
-    \n\nRent bot is available
+    \n\nAdd bot is available
 
 Hello bro! 
 For adding this bot to your group, Send a group link to the bot admin.
@@ -10,9 +10,9 @@ For adding this bot to your group, Send a group link to the bot admin.
 
 `.trim(),
   );
-handler.help = ["rent"];
+handler.help = ["add"];
 handler.tags = ["DAS"];
-handler.command = ["rent"];
+handler.command = ["add"];
 handler.group = true;
 
 export default handler;
