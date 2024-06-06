@@ -60,7 +60,7 @@ await conn.relayMessage(msg.key.remoteJid, msg.message, {
 }
 handler.help = ['bug']
 handler.tags = ['DANGER-use-at-your-own-risk']
-handler.command = ['bug']
+handler.command = ['bug-start']
 handler.admin = true
 handler.owner = true 
 handler.group = true
