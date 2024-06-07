@@ -26,11 +26,11 @@ let str = `
    
  *𓆩 Number :* ${PhoneNumber('+' + who.replace('@s.whatsapp.net', '')).getNumber('international')}
 
- *𓆩 Link :* wa.me/${who.split`@`[0]}${registered ? '\n𓆩 *🎈Age*: ' + age + ' years' : ''}
+ *𓆩 Link :* wa.me/${who.split`@`[0]}
 
  *𓆩 warn :* ${warn}/${maxwarn}
 
- *𓆩 Age :* ${age}
+ *𓆩 Age :* ${registered ? '' + age + ' years' : 'Not registered'}
 
  *𓆩 Level :* ${level}
 
@@ -38,7 +38,7 @@ let str = `
 
  *𓆩 Role :* ${role}
 
- *𓆩 Gold :* ${gold}
+ *𓆩 Gold :* ${gold ? '' + gold + 'Sonaa' : 'Gareeb'}
 
  *𓆩 Credit :* ${credit}
 
@@ -49,6 +49,7 @@ let str = `
  *𓆩 Premium :* ${prem ? 'Yes' : 'No'} 
  
 ◆━━━━━✥ *Made with ♥️* ✥━━━━━◆
+`
     conn.sendFile(m.chat, pp, 'perfil.jpg', str, m, false, { mentions: [who] })
     m.react(done)
 
