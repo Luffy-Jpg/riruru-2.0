@@ -15,42 +15,38 @@ import {
  
  const defaultMenu = {
   before: `
-  hello! %ucpn my name is Riruru.
+   hello! %ucpn my name is Riruru.
   
  
    ◆━━━━━✥ *USER* ✥━━━━━◆
  
-     𓆩⛥ *Name :* %name
-     𓆩⛥ *Gold :* %credit
-     𓆩⛥ *Role :* %role
-     𓆩⛥ *Level :* %level 
-     𓆩⛥ *Xp :* %exp / %maxexp
-     𓆩⛥ *Total Xp :* %totalexp
+     *𓆩 Name :* %name
+     *𓆩 Gold :* %credit
+     *𓆩 Role :* %role
+     *𓆩 Level :* %level 
+     *𓆩 Xp :* %exp / %maxexp
+     *𓆩 Total Xp :* %totalexp
 
-  
- 
    ◆━━━━━✥ *INFO* ✥━━━━━◆
  
-     𓆩⛥ *Bot Name :* ${botname}
-     𓆩⛥ *Mode :* %mode
-     𓆩⛥ *Platform :* %platform
-     𓆩⛥ *Type :* NodeJs
-     𓆩⛥ *Baileys :* Multi Device
-     𓆩⛥ *Prefix :* [ *%_p* ]
-     𓆩⛥ *Uptime :* %muptime
-     𓆩⛥ *Database :*  %totalreg
+     *𓆩 Bot Name :* ${botname}
+     *𓆩 Mode :* %mode
+     *𓆩 Platform :* %platform
+     *𓆩 Type :* NodeJs
+     *𓆩 Baileys :* Multi Device
+     *𓆩 Prefix :* [ *%_p* ]
+     *𓆩 Uptime :* %muptime
+     *𓆩 Database :*  %totalreg
 
- 
-  
    ◆━━━━━✥ *TOTAL CMD* ✥━━━━━◆ 
     
-    *𓆩⛥ %totalfeatures CMD*
+     *𓆩 %totalfeatures CMD*
   
  %readmore
  `.trimStart(),
  header: "\n\n◆━━━━━✥ *%category* ✥━━━━━◆",
  body: "*𓆩* %cmd %isPremium %islimit",
- footer: "\n> Riruru ♥️",
+ footer: "\n> Riruru™",
  after: "\n%me",
  }
  let handler = async (m, {
