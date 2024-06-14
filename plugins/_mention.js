@@ -9,7 +9,7 @@ handler.all = async function (m, conn) {
     let url = "https://bot-support.vercel.app"
     let murl = "https://bot-support.vercel.app"
     let hash = global.botname
-    let img = "https://i.postimg.cc/8PDCmWt4/Screenshot-2024-03-06-10-02-39-296-com-miui-gallery.png"
+    let img = "https://64.media.tumblr.com/fd865f3f10f9e72f7d688bd454f2654b/d4801b790ef05840-2e/s640x960/9c70443aa2fd58631d84bf503a9bb37d221b2419.jpg"
     let num = "919131652091"
 
     let doc = {
