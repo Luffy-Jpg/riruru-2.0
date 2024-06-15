@@ -71,8 +71,8 @@ global.APIKeys = {
 // Sticker WM
 global.botname = process.env.BOTNAME
 global.premium = 'true'
-global.packname = ''
-global.author = 'RIRURU'
+global.packname = 'RIRURU'
+global.author = 'ARJU'
 global.menuvid = 'https://imgur.com/HH0g2sa.mp4'
 global.igfg = 'https://bot-support.vercel.app/'
 global.dygp = 'https://bot-support.vercel.app/'
