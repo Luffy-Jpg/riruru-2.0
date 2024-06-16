@@ -1,7 +1,7 @@
 let handler = async (m, { conn, text, usedPrefix, command }) => {
   // Sound
   let name = m.pushName || conn.getName(m.sender);
-  var vn = "https://raw.githubusercontent.com/thearju/A17/master/Assets/audio/doreamon.mp3";
+  var vn = "https://raw.githubusercontent.com/thearju/A17/master/Assets/audio/riruru.mp3";
   let url = "https://github.com/thearju/gmx-1.0";
   let murl = "https://bot-support.vercel.app";
   let img = "https://i.postimg.cc/dt6J5sd9/pipo.png";
@@ -32,12 +32,12 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     contextInfo: {
       mentionedJid: [m.sender],
       externalAdReply: {
-        title: `Hello ♥️😊 ${m.name}`,
-        body: `Let's chat together! Click on here 🎶`,
+        title: `Hello ♥️😊 ${m.name} i am alive`,
+        body: `Click on here 🎶`,
         thumbnailUrl: img,
         sourceUrl: "https://bot-support.vercel.app",
         mediaType: 1,
-        showAdAttribution: true, 
+        showAdAttribution: false, 
         renderLargerThumbnail: true,
       },
     },
@@ -46,8 +46,8 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   await conn.sendMessage(m.chat, doc, { quoted: con });
 };
 
-handler.help = ["owner"];
+handler.help = ["alive"];
 handler.tags = ["gmx"];
-handler.command = ["owner", "admin", "alive"];
+handler.command = ["up", "run", "alive"];
 handler.group = true;
 export default handler;
