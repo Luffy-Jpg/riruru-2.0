@@ -58,6 +58,7 @@ handler.help = [
 handler.tags = ['audio']
 handler.command =
   /^(bass|blown|deep|earrape|fas?t|nightcore|reverse|robot|slow|smooth|tupai|squirrel|chipmunk)$/i
+handler.group = true
 export default handler
 
 const getRandom = ext => {
