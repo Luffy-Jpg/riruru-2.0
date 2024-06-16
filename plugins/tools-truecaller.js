@@ -23,7 +23,7 @@ let handler = async (m, { conn, text }) => {
     console.log(response)
     let json = await response.json()
 
-    json.creator = 'GURU'
+    json.creator = 'ARJU'
 
     let milf = ''
     for (let prop in json) {
@@ -59,7 +59,8 @@ let handler = async (m, { conn, text }) => {
 }
 
 handler.help = ['true']
-handler.tags = ['tools']
+handler.tags = ['TOOL']
 handler.command = /^(true|caller)$/i
+handler.group = true
 
 export default handler
