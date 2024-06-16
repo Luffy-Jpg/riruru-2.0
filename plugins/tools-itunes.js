@@ -37,7 +37,7 @@ let itunesHandler = async (m, { conn, text }) => {
 }
 
 itunesHandler.help = ['itunes']
-itunesHandler.tags = ['tools']
+itunesHandler.tags = ['TOOL']
 itunesHandler.command = /^(itunes)$/i
-
+handler.group = true
 export default itunesHandler
