@@ -60,8 +60,9 @@ ${message.text}
   }
 }
 handler.help = ['tempmail']
-handler.tags = ['tools']
+handler.tags = ['TOOL']
 handler.command = ['tempmail', 'checkmail']
 handler.diamond = false
+handler.group = true
 
 export default handler
