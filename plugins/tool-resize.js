@@ -29,8 +29,9 @@ let handler = async (m, { conn, usedPrefix, command, args, text }) => {
   }
 }
 
-handler.tags = ['tools']
+handler.tags = ['TOOL']
 handler.help = ['length <amount>']
 handler.command = /^(length|filelength|edittamaño|totamaño|tamaño)$/i
+handler.group = true
 
 export default handler
