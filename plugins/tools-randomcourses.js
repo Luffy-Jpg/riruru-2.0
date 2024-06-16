@@ -30,7 +30,7 @@ let handler = async (m, { conn }) => {
   }
 }
 handler.help = ['course', 'randomcourse']
-handler.tags = ['tools']
+handler.tags = ['TOOL']
 handler.command = ['course', 'randomcourse']
-
+handler.group = true
 export default handler
