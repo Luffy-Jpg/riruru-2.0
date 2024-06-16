@@ -5,6 +5,7 @@ let handler = async (m, { conn, command, args }) => {
   conn.sendFile(m.chat, ss, 'error.png', args[0], m)
 }
 handler.help = ['ss', 'ssf'].map(v => v + ' <url>')
-handler.tags = ['tools']
+handler.tags = ['TOOL']
 handler.command = /^ss(web)?f?$/i
+handler.group = true
 export default handler
