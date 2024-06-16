@@ -42,7 +42,7 @@ let handler = async m => {
 }
 
 handler.help = ['tourl']
-handler.tags = ['tools']
+handler.tags = ['TOOL']
 handler.command = ['url', 'tourl']
-
+handler.group = true
 export default handler
