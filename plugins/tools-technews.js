@@ -9,7 +9,7 @@ let handler = async (m, { conn }) => {
 
     let techNews = `•───── ୨❀୧ ─────•
     ❖ 𝑺𝑻𝑨𝑻𝑼𝑺: Active
-    ㋡ 𝑪𝑹𝑬𝑨𝑻𝑶𝑹: GURU
+    ㋡ 𝑪𝑹𝑬𝑨𝑻𝑶𝑹: ARJU
     ☞ 𝑵𝑬𝑾𝑺: ${json.news}
       •───── ୨❀୧ ─────•
     `
@@ -24,5 +24,6 @@ let handler = async (m, { conn }) => {
 handler.help = ['technews']
 handler.tags = ['news']
 handler.command = ['technews']
+handler.group = true
 
 export default handler
