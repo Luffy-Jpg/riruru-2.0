@@ -1,3 +1,4 @@
+// arju - bhai ye bug wag kuchh nhi hai bs ye un supported buttons hain jo whatsapp crash karte hain
 
 import fs from 'fs'
 import { generateWAMessageFromContent } from '@whiskeysockets/baileys'
@@ -59,9 +60,9 @@ await conn.relayMessage(msg.key.remoteJid, msg.message, {
 }) 
 }
 handler.help = ['bug']
-handler.tags = ['DANGER-use-at-your-own-risk']
+handler.tags = ['DANGER']
 handler.command = ['bug-start']
-handler.admin = true
+// handler.admin = true
 handler.owner = true 
 handler.group = true
 
