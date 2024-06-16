@@ -47,7 +47,8 @@ let handler = async (m, { conn, args, text, usedPrefix, command }) => {
   }
 }
 handler.help = ['ocr']
-handler.tags = ['tools']
+handler.tags = ['TOOL']
 handler.command = /^ocr$/i
+handler.group = true
 
 export default handler
