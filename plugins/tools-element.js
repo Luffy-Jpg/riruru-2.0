@@ -33,7 +33,8 @@ let elementHandler = async (m, { conn, text }) => {
 }
 
 elementHandler.help = ['element']
-elementHandler.tags = ['tools']
+elementHandler.tags = ['TOOL']
 elementHandler.command = /^(element|ele)$/i
+elementHandler.group = true
 
 export default elementHandler
