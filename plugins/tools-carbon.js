@@ -32,7 +32,8 @@ let handler = async (m, { conn, args }) => {
 }
 
 handler.help = ['.carbon <code>']
-handler.tags = ['tools']
+handler.tags = ['TOOL']
 handler.command = /^carbon$/i
+handler.group = true
 
 export default handler
