@@ -5,8 +5,9 @@ let handler = async (m, { conn, text }) => {
   conn.reply(m.chat, l + readMore + r, m)
 }
 handler.help = ['readmore <text1>|<text2>']
-handler.tags = ['tools']
+handler.tags = ['TOOL']
 handler.command = ['readmore']
+handler.group = true
 
 export default handler
 
