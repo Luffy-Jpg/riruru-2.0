@@ -28,5 +28,6 @@ let handler = async (m, { conn, text }) => {
 handler.help = ['pokedex <pokemon>']
 handler.tags = ['anime']
 handler.command = /^pokedex/i
+handler.group = true
 
 export default handler
