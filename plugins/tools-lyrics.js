@@ -24,7 +24,8 @@ ${json.lyrics}`,
   }
 }
 handler.help = ['lyrics']
-handler.tags = ['tools']
+handler.tags = ['TOOL']
 handler.command = ['letra', 'lyrics', 'letras']
+handler.group = true
 
 export default handler
