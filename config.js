@@ -23,7 +23,7 @@ for (let i = 0; i < ownerlist.length; i += 2) {
 
 //global.pairingNumber = "" //put your bot number here
 
-global.db = 'mongodb+srv://arju:grandmasterx9131@payal.vczf3er.mongodb.net/?retryWrites=true&w=majority'
+//global.database = 'mongodb+srv://arju:grandmasterx9131@payal.vczf3er.mongodb.net/?retryWrites=true&w=majority'
 global.mods = ['919131652091']
 global.prems = ['919131652091']
 global.allowed = ['919131652091']
