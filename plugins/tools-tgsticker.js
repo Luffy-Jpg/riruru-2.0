@@ -23,9 +23,10 @@ var handler = async (m, { conn, args }) => {
   } else throw 'Input Query / Telesticker Url'
 }
 handler.help = ['telesticker']
-handler.tags = ['tools']
+handler.tags = ['TOOL']
 handler.command = /^(telestic?ker|tgsticker)$/i
 handler.limit = true
+handler.group = true
 
 export default handler
 
