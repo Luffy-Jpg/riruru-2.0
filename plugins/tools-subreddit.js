@@ -39,7 +39,8 @@ let subredditHandler = async (m, { conn, text }) => {
 }
 
 subredditHandler.help = ['subreddit']
-subredditHandler.tags = ['tools']
+subredditHandler.tags = ['TOOL']
 subredditHandler.command = /^(subreddit|reddit)$/i
+handler.group = true
 
 export default subredditHandler
