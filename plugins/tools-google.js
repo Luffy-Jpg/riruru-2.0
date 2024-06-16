@@ -55,10 +55,11 @@ handler.before = async (m, { conn }) => {
   }
 }
 
-handler.help = ['play']
+handler.help = ['GOOGLE']
 handler.tags = ['downloader']
 handler.command = /^(google)$/i
 handler.limit = true
+handler.group = true
 export default handler
 
 async function googleresult(query) {
