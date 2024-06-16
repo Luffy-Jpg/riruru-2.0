@@ -32,8 +32,9 @@ let handler = async (m, { conn, text }) => {
   }
 }
 handler.help = ['cal <equation>']
-handler.tags = ['tools']
+handler.tags = ['TOOL']
 handler.command = ['cal', 'calc', 'calcular', 'calculadora']
 handler.exp = 5
+handler.group = true
 
 export default handler
