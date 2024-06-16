@@ -30,7 +30,8 @@ https://cloud.google.com/translate/docs/languages
   }
 }
 handler.help = ['translate <lang> <text>']
-handler.tags = ['tools']
+handler.tags = ['TOOL']
 handler.command = ['translate', 'tl', 'trad', 'tr']
+handler.group = true
 
 export default handler
