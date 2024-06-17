@@ -1,5 +1,11 @@
 {
-    
+  "scripts": {
+    "build": "[my-framework] build --output public"
+  }
+}
+{
+    "name": "guruai",
+    "version": "2.1.0",
     "description": "Advanced WhatsApp Ai",
     "main": "index.js",
     "type": "module",
