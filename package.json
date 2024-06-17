@@ -15,7 +15,7 @@
     "scripts": {
         "start": "node index.js",
         "test": "node test.js"
-        "build": "[my-framework] build --output public"
+        
     },
     "keywords": [
         "termux-whatsapp-bot",
@@ -118,4 +118,9 @@
     }
 }
 
+{
+  "scripts": {
+    "build": "[my-framework] build --output public"
+  }
+}
  
