@@ -15,6 +15,7 @@
     "scripts": {
         "start": "node index.js",
         "test": "node test.js"
+        "build": "[my-framework] build --output public"
     },
     "keywords": [
         "termux-whatsapp-bot",
@@ -116,3 +117,5 @@
         "prettier": "^3.2.5"
     }
 }
+
+ 
