@@ -726,7 +726,7 @@ global.dfail = (type, m, conn) => {
         owner: `:)`,
         moderator: `*${emoji.moderator} Moderator's Query*\n
     ${userTag} This command can only be used by *Moderators*!`,
-        premium: `:)`,
+        premium: `*Only pro user can use this feature.*`,
         group: ``,
         private: `*${emoji.private} Private Query*\n
     ${userTag} This command can only be used in *Private Chats*!`,
@@ -734,7 +734,7 @@ global.dfail = (type, m, conn) => {
     ${userTag} This command is only for *Group Admins*!`,
         botAdmin: `*${emoji.botAdmin} Bot Admin's Query*\n
     ${userTag} Make the bot an *Admin* to use this command!`,
-        unreg: `Please register to use this feature by typing:\n\n*/register name.age*\n\nExample: */register ${m.name}.18*`,
+        unreg: `Please register to use this feature by typing:\n\n*/register name.age*\n\nExample: */register ${m.name}.16*`,
         nsfw: `*${emoji.nsfw} NSFW Query*\n
     ${userTag} NSFW is not active. Please contact the Group admin to enable this feature!`,
         restrict: `*${emoji.restrict} Inactive Feature Query*\n
