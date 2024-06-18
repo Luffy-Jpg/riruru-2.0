@@ -1,3 +1,6 @@
+// ARJU KA MAAL HAI
+// █▓▒▒░░░ARJU░░░▒▒▓█
+
 import fetch from 'node-fetch'
 
 let handler = m => m
@@ -11,12 +14,13 @@ handler.all = async function (m) {
     contextInfo: {
       externalAdReply: {
         mediaUrl: dygp,
-        mediaType: 'VIDEO',
-        description: 'support group',
+        mediaType: 1,
+        description: 'ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ',
         title: packname,
-        body: 'support group',
+        body: 'Join now',
         thumbnailUrl: pp,
         sourceUrl: dygp,
+        renderLargerThumbnail: true,
       },
     },
   }
@@ -26,12 +30,13 @@ handler.all = async function (m) {
     contextInfo: {
       externalAdReply: {
         mediaUrl: dygp,
-        mediaType: 'VIDEO',
+        mediaType: 1,
         description: 'Donate',
-        title: 'YOUTUBE',
+        title: 'RÌRÚRÚ-ßÖ†',
         body: 'Keep bot alive',
         thumbnailUrl: pp,
         sourceUrl: fgyt,
+        renderLargerThumbnail: true,
       },
     },
   }
@@ -40,14 +45,15 @@ handler.all = async function (m) {
   global.rpyt = {
     contextInfo: {
       externalAdReply: {
-        showAdAttribution: true,
+        showAdAttribution: false,
         mediaUrl: fgyt,
-        mediaType: 'VIDEO',
+        mediaType: 1,
         description: 'Suscribete : ' + fgyt,
-        title: 'YouTube',
-        body: 'learn to create your own bots',
+        title: 'RÌRÚRÚ-ßÖ†',
+        body: 'ムののり りﾑﾘ ﾑん乇ﾑり',
         thumbnailUrl: pp,
         sourceUrl: fgyt,
+        renderLargerThumbnail: true,
       },
     },
   }
