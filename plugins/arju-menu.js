@@ -12,12 +12,10 @@ import {
  import os from "os"
  import fs from "fs"
  import fetch from "node-fetch"
- 
+ // %UCPN
  const defaultMenu = {
   before: `
-   hello! %ucpn my name is Riruru.
-  
- 
+   🐬  🎀  𝐻𝐸𝐿𝐿🏵\n%name\n𝑀𝒴 𝒩𝒜𝑀𝐸 𝐼𝒮 𝑅𝐼𝑅𝒰𝑅𝒰  🎀  🐬\n%ucpn\n
    ◆━━━━━✥ *USER* ✥━━━━━◆
  
      *𓆩 Name :* %name
@@ -29,7 +27,7 @@ import {
 
    ◆━━━━━✥ *INFO* ✥━━━━━◆
  
-     *𓆩 Bot Name :* ${botname}
+     *𓆩 Bot Name :* Riruru
      *𓆩 Mode :* %mode
      *𓆩 Platform :* %platform
      *𓆩 Type :* NodeJs
