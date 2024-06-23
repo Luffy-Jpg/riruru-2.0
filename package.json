@@ -1,4 +1,3 @@
-
 {
     "name": "guruai",
     "version": "2.1.0",
@@ -16,7 +15,6 @@
     "scripts": {
         "start": "node index.js",
         "test": "node test.js"
-        
     },
     "keywords": [
         "termux-whatsapp-bot",
@@ -81,7 +79,6 @@
         "instagram-url-direct": "^1.0.12",
         "jimp": "^0.16.1",
         "jsdom": "^20.0.1",
-        "knights-canvas": "^1.3.7-a",
         "link-preview-js": "^3.0.0",
         "lodash": "^4.17.21",
         "lowdb": "^3.0.0",
@@ -118,5 +115,3 @@
         "prettier": "^3.2.5"
     }
 }
-
-
