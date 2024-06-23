@@ -25,7 +25,7 @@ for (let i = 0; i < ownerlist.length; i += 2) {
 
 //global.database = 'mongodb+srv://arju:grandmasterx9131@payal.vczf3er.mongodb.net/?retryWrites=true&w=majority'
 global.mods = ['919131652091']
-global.prems = ['919131652091']
+global.prems = ['919131652091', '919005916821']
 global.allowed = ['919131652091']
 global.keysZens = ['c2459db922', '37CC845916', '6fb0eff124']
 global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
