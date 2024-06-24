@@ -24,6 +24,7 @@ let handler = async (m, {conn, isPrems }) => {
 handler.help = ['daily', 'claim']
 handler.tags = ['xp']
 handler.command = /^(daily|claim)$/i
+handler.group = true
 
 handler.cooldown = cooldown
 
