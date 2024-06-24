@@ -1,6 +1,6 @@
 const rewards = {
  exp: 15000,
-    money: 35999,
+    money: 3599,
     potion: 9,
   }
   const cooldown = 604800000
@@ -13,7 +13,7 @@ const rewards = {
       user[reward] += rewards[reward]
       text += `*+${rewards[reward]}* ${global.rpg.emoticon(reward)}${reward}\n`
     }
-    //conn.sendButton(m.chat,'*––––––『 WEEKLY 』––––––*', text.trim(), null, [['Profile', ''], ['Monthly', '.monthly']],m)
+    conn.sendButton(m.chat,'*––––––『 WEEKLY 』––––––*', text.trim(), null, [['Profile', '.profile'], ['Monthly', '.monthly']], m)
     m.reply(`
     🎁 *weekly reward*
     
@@ -24,6 +24,8 @@ const rewards = {
   handler.help = ['weekly']
   handler.tags = ['econ']
   handler.command = /^(weekly)$/i
+  handler.group = true
+
   
   handler.cooldown = cooldown
   
