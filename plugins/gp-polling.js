@@ -2,7 +2,7 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
   // Split the message text using the '|' character and slice the array to remove the first element.
   let a = text.split('|').slice(1)
   if (!a[1]) throw 'Format\n' + usedPrefix + command + ' hello |yes|no'
-  if (a[12]) throw 'Too many options, Format\n' + usedPrefix + command + ' hello |yes|no'
+  if (a[12]) throw 'Too many options, Format\n' + usedPrefix + command + ' are you nigga |yes|no'
   // Check for duplicate options in the poll.
   if (checkDuplicate(a)) throw 'Duplicate options in the message!'
   let cap = '*Polling Request By* ' + m.name + '\n*Message:* ' + text.split('|')[0]
@@ -22,6 +22,8 @@ let handler = async (m, { conn, text, args, usedPrefix, command }) => {
 handler.help = ['poll question|option|option']
 handler.tags = ['group']
 handler.command = /^po(l((l?ing|ls)|l)|ols?)$/i
+handler.premium = true
+handler.group = true
 
 export default handler
 
