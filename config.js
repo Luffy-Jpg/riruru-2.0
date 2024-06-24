@@ -70,17 +70,17 @@ global.APIKeys = {
 }
 
 // Sticker WM
-global.botname = process.env.BOTNAME
+global.botname = 'Riruru'
 global.premium = 'true'
 global.packname = ''
 global.author = '█▓▒▒░░░ARJU░░░▒▒▓█'
 global.menuvid = 'https://imgur.com/HH0g2sa.mp4'
-global.igfg = 'https://bot-support.vercel.app/'
-global.dygp = 'https://bot-support.vercel.app/'
-global.fgsc = 'https://bot-support.vercel.app/'
-global.fgyt = 'https://bot-support.vercel.app/'
-global.fgpyp = 'https://bot-support.vercel.app/'
-global.fglog = 'https://bot-support.vercel.app/'
+global.igfg = 'https://www.instagram.com/arju_sonwani.dev?igsh=a2UxZ3ZyZjNicmUw'
+global.dygp = 'https://www.instagram.com/arju_sonwani.dev?igsh=a2UxZ3ZyZjNicmUw'
+global.fgsc = 'https://www.instagram.com/arju_sonwani.dev?igsh=a2UxZ3ZyZjNicmUw'
+global.fgyt = 'https://www.instagram.com/arju_sonwani.dev?igsh=a2UxZ3ZyZjNicmUw'
+global.fgpyp = 'https://www.instagram.com/arju_sonwani.dev?igsh=a2UxZ3ZyZjNicmUw'
+global.fglog = 'https://www.instagram.com/arju_sonwani.dev?igsh=a2UxZ3ZyZjNicmUw'
 global.thumb = fs.readFileSync('bot.jpg')
 
 global.wait = '> Loading...'
