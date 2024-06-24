@@ -8,6 +8,7 @@ handler.all = async function (m) {
   let who =
     m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? this.user.jid : m.sender
   let pp = await this.profilePictureUrl(who, 'image').catch(_ => 'bot.jpg')
+  let img = 'https://lh3.googleusercontent.com/_YElRNQBcrZpdqcql3L6X4B5fyl1ZvdyRHDeE9SF4DUb8a8yDYEflLB_v476PD9drCo8fp2Eo9IycCrncrc5whHoFnxe927_Bg=nu-e365-rj-q80-w360-h189-pp'
 
   //reply link wa
   global.rpl = {
@@ -18,7 +19,7 @@ handler.all = async function (m) {
         description: 'ꜱᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ',
         title: packname,
         body: 'Join now',
-        thumbnailUrl: pp,
+        thumbnailUrl: img,
         sourceUrl: dygp,
         renderLargerThumbnail: true,
       },
@@ -34,7 +35,7 @@ handler.all = async function (m) {
         description: 'Donate',
         title: 'RÌRÚRÚ-ßÖ†',
         body: 'Keep bot alive',
-        thumbnailUrl: pp,
+        thumbnailUrl: img,
         sourceUrl: fgyt,
         renderLargerThumbnail: true,
       },
@@ -51,7 +52,7 @@ handler.all = async function (m) {
         description: 'Suscribete : ' + fgyt,
         title: 'RÌRÚRÚ-ßÖ†',
         body: 'ムののり りﾑﾘ ﾑん乇ﾑり',
-        thumbnailUrl: pp,
+        thumbnailUrl: img,
         sourceUrl: fgyt,
         renderLargerThumbnail: true,
       },
