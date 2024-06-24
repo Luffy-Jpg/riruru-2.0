@@ -13,9 +13,9 @@ let handler = async (m) => {
     let text = ''
     for (let reward of Object.keys(rewards)) if (reward in user) {
         user[reward] += rewards[reward]
-        text += `*+${rewards[reward]}* ${rpg.emoticon(reward)}${reward}\n`
+        text += `*+${rewards[reward]}* ${reward}\n`
     }
-    //conn.sendButton(m.chat,'*––––––『 MONTHLY 』––––––*', text.trim(), null, [['Inventory', '.inv'], ['Menu', '.menu']],m)
+    conn.sendButton(m.chat,'*––––––『 MONTHLY 』––––––*', text.trim(), null, [['Bank', '.bank'], ['Menu', '.menu']],m)
     m.reply(`
     🎁 *monthly reward*
     
@@ -26,6 +26,8 @@ let handler = async (m) => {
 handler.help = ['monthly']
 handler.tags = ['rpg']
 handler.command = /^(monthly)$/i
+handler.group = true
+
 
 handler.cooldown = cooldown
 
