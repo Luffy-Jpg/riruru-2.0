@@ -5,21 +5,18 @@
 
 
 
-#### SETUP
+#### No Need to fork and edit some files 📂 Just click on Get session id and Now deploy (Railway) 
 
-1. Fork the repo
-    <br>
-<a href='https://github.com/Guru322/GURU-BOT/fork' target="_blank"><img alt='Fork repo' src='https://img.shields.io/badge/Fork Repo-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
+#### Give a 🌟 star to original Repo Of Guru322/GURU-Ai
 
 
-
-2. Get Session ID (Server 1)
+1. Get Session ID (Server 1)
    > For Indian users Connect to a usa Vpn while login
     
      <a href='https://session.guruapi.tech' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
 
 
-3. Get Session ID (Server 2) (use this if server 1 Doesn't work)
+2. Get Session ID (Server 2) (use this if server 1 Doesn't work)
     <br>
 <a href='https://replit.com/@UsharaniSahoo1/GURU-BOT-PAIR?v=1' target="_blank"><img alt='SESSION ID' src='https://img.shields.io/badge/Session_id-100000?style=for-the-badge&logo=scan&logoColor=white&labelColor=black&color=black'/></a>
 
@@ -36,5 +33,7 @@
  
  ## 🤩 Support
 
-SUPPORT GROUP: <a href="https://chat.whatsapp.com/FioZaOezu5sJ5Kyxjl8wmB"><img alt="WhatsApp" src="https://img.icons8.com/?size=60&id=9Otd0Js4uSYi&format=png"  width="50" height="50"/></a>
+Click on BOT to get GC: <br>
+<br>
+<a href="https://chat.whatsapp.com/FioZaOezu5sJ5Kyxjl8wmB"><img alt="WhatsApp" src="https://img.icons8.com/?size=60&id=9Otd0Js4uSYi&format=png"  width="50" height="50"/></a>
 
