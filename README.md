@@ -30,6 +30,8 @@
    <br>
   <p align="center"><a href="https://railway.app/template/4_o8dw?referralCode=eSwGCK"> <img src="https://railway.app/brand/logotype-light.png" width="380" height="38.45"/></a></p>
 
+  [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/yNPYKk?referralCode=wp-9Da)
+
  
  ## 🤩 Support
 
