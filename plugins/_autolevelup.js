@@ -10,9 +10,7 @@ export async function before(m, { conn }) {
         user.level++
     user.role = global.rpg.role(user.level).name
     if (before !== user.level) {
-        m.reply(`
-🐬  🎀  𝐻𝐸𝐿𝐿🏵 𝑀𝒴 𝒩𝒜𝑀𝐸 𝐼𝒮 𝑅𝐼𝑅𝒰𝑅𝒰  🎀  🐬
-\n> ARJU ♥️😒`.trim())
+        m.reply(``.trim())
     }
 }
 
