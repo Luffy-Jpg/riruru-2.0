@@ -20,12 +20,12 @@
     "DATABASE_URL": {
       "description": "your mongodb database url",
       "required": true,
-      "value": "mongodb+srv://arju:grandmasterx9131@payal.vczf3er.mongodb.net/?retryWrites=true&w=majority"
+      "value": ""
     },
     "SESSION_ID": {
       "description": "your session id",
       "required": true,
-      "value": "GuruBot~Av9eHaFv"
+      "value": ""
     },
     "MODE": {
       "description": "mode public or private",
