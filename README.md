@@ -56,7 +56,7 @@ GURU-BOT- Simple Multi Device whatsapp bot.
  
  ## 🤩 Support
 
-SUPPORT GROUP: <a href="https://chat.whatsapp.com/FioZaOezu5sJ5Kyxjl8wmB"><img alt="WhatsApp" src="https://www.svgrepo.com/show/154343/whatsapp.svg"/></a>
+SUPPORT GROUP: <a href="https://chat.whatsapp.com/FioZaOezu5sJ5Kyxjl8wmB"><img alt="WhatsApp" src="https://www.svgrepo.com/show/154343/whatsapp.svg"  width="38" height="38.45"/></a>
 
 - Star ⭐ the repo if you like GURU-BOT.
 
