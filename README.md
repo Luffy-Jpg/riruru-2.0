@@ -36,5 +36,5 @@
  
  ## 🤩 Support
 
-SUPPORT GROUP: <a href="https://chat.whatsapp.com/FioZaOezu5sJ5Kyxjl8wmB"><img alt="WhatsApp" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDtHLjAWfjzaL2ZGR_wljGWMQwxTRslO96lg&s"  width="50" height="50"/></a>
+SUPPORT GROUP: <a href="https://chat.whatsapp.com/FioZaOezu5sJ5Kyxjl8wmB"><img alt="WhatsApp" src="https://img.icons8.com/?size=60&id=9Otd0Js4uSYi&format=png"  width="50" height="50"/></a>
 
