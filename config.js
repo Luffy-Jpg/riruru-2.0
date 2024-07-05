@@ -21,12 +21,12 @@ for (let i = 0; i < ownerlist.length; i += 2) {
     global.owner.push(owner);
 }
 
-//global.pairingNumber = "" //put your bot number here
+//global.pairingNumber = "918431403667" //put your bot number here
 
 //global.database = 'mongodb+srv://arju:grandmasterx9131@payal.vczf3er.mongodb.net/?retryWrites=true&w=majority'
-global.mods = ['919131652091']
-global.prems = ['919131652091', '919005916821', '919882879277', '917090462940', '918431403667', '923166424629', '923278974102', '923206629195', '919876249720']
-global.allowed = ['919131652091']
+global.mods = ['917090462940']
+global.prems = ['917090462940']
+global.allowed = ['917090462940']
 global.keysZens = ['c2459db922', '37CC845916', '6fb0eff124']
 global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
 global.keysxteammm = [
@@ -70,17 +70,17 @@ global.APIKeys = {
 }
 
 // Sticker WM
-global.botname = 'Riruru'
+global.botname = 'RDJ-Ai'
 global.premium = 'true'
 global.packname = ''
-global.author = '█▓▒▒░░░ARJU░░░▒▒▓█'
+global.author = 'RDJ-JEFF'
 global.menuvid = 'https://imgur.com/HH0g2sa.mp4'
-global.igfg = 'https://bot-support.vercel.app/'
-global.dygp = 'https://bot-support.vercel.app/'
-global.fgsc = 'https://bot-support.vercel.app/'
-global.fgyt = 'https://bot-support.vercel.app/'
-global.fgpyp = 'https://bot-support.vercel.app/'
-global.fglog = 'https://bot-support.vercel.app/'
+global.igfg = 'https://chat.whatsapp.com/KRfilRVOtt0DOwdAGFq1vE'
+global.dygp = 'https://chat.whatsapp.com/KRfilRVOtt0DOwdAGFq1vE'
+global.fgsc = 'https://chat.whatsapp.com/KRfilRVOtt0DOwdAGFq1vE'
+global.fgyt = 'https://chat.whatsapp.com/KRfilRVOtt0DOwdAGFq1vE'
+global.fgpyp = 'https://chat.whatsapp.com/KRfilRVOtt0DOwdAGFq1vE'
+global.fglog = 'https://chat.whatsapp.com/KRfilRVOtt0DOwdAGFq1vE'
 global.thumb = fs.readFileSync('bot.jpg')
 
 global.wait = '> Loading...'
