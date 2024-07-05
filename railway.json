@@ -1,11 +1,11 @@
 {
   "BOTNAME": "Riruru",
-  "DATABASE_URL": "mongodb+srv://arju:grandmasterx9131@payal.vczf3er.mongodb.net/?retryWrites=true&w=majority",
+  "DATABASE_URL": "",
   "MODE": "public",
   "OWNERS": "919131652091;ARJU",
   "PREFIX": "/",
   "REMOVEBG_KEY": "8iRG6QgL6zWzsDpAM9FRGWQP",
-  "SESSION_ID": "GuruBot~c6zxrHcs",
+  "SESSION_ID": "",
   "antidelete": "false",
   "autoRead": "true",
   "statusview": "false"
