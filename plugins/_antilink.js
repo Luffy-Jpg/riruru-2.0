@@ -13,9 +13,9 @@ export async function before(m, {conn, isAdmin, isBotAdmin }) {
             const linkThisGroup = `https://chat.whatsapp.com/${await this.groupInviteCode(m.chat)}`
             if (m.text.includes(linkThisGroup)) return !0
         }
-        await conn.reply(m.chat, `*link allowed nhi hai bhai.*
+        await conn.reply(m.chat, `*link allowed nahi hai behen k lode nikal madarchod.*
             
-dusre gc ka link send mat karo. 
+dusre gc ka link send mat karo nahi tho tera dai chodunga. 
 I'm sorry *@${m.sender.split('@')[0]}*  you will be kicked out of the group ${isBotAdmin ? '' : '\n\nwtf :"v'}`, null, { mentions: [m.sender] } )
         if (isBotAdmin && chat.antiLink) {
         	await conn.sendMessage(m.chat, { delete: m.key })

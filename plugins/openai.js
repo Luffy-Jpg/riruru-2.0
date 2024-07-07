@@ -40,7 +40,7 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
       let data = await response.json()
       let result = data.completion
 
-      await conn.sendButton(m.chat,result, author, 'https://telegra.ph/file/c3f9e4124de1f31c1c6ae.jpg', [['Script', `.sc`]], null, [['Follow Me', `https://github.com/thearju`]], m)
+      await conn.sendButton(m.chat,result, author, 'https://telegra.ph/file/c3f9e4124de1f31c1c6ae.jpg', [['Script', `.sc`]], null, [['Follow Me', `https://www.instagram.com/vfxartist_jeff?igsh=MXF0eWRoYXMzbDdsOQ==`]], m)
       m.react(done)
     }
   } catch (error) {
@@ -50,7 +50,7 @@ let handler = async (m, { text, conn, usedPrefix, command }) => {
 }
 handler.help = ['chatgpt']
 handler.tags = ['AI']
-handler.command = ['bro', 'chatgpt', 'ai', 'gpt']
+handler.command = ['chatgpt', 'ai', 'gpt', 'bro']
 handler.group = true
 
 export default handler

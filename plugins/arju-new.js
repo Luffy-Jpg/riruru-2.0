@@ -4,12 +4,12 @@ let handler = async (m) =>
 This feature is not available yet! 
 we will notify you when this feature is available.
 
-*Developer : ARJU*\n*Contact : wa.me/919131652091*
+*Developer : JEFF*\n*Contact : wa.me/917090462940*
 
 `.trim(),
   );
 handler.help = ["set"];
-handler.tags = ["DAS"];
+handler.tags = ["RDJ"];
 handler.command = ["relation", "set"];
 handler.group = true;
 

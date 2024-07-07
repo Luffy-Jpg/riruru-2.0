@@ -1,5 +1,5 @@
-// ARJU KA MAAL HAI
-// █▓▒▒░░░ARJU░░░▒▒▓█
+// JEFF KA MAAL HAI
+// RDJ-Ai
 
 import fetch from 'node-fetch'
 
@@ -33,7 +33,7 @@ handler.all = async function (m) {
         mediaUrl: dygp,
         mediaType: 1,
         description: 'Donate',
-        title: 'RÌRÚRÚ-ßÖ†',
+        title: 'RDJ-Ai',
         body: 'Keep bot alive',
         thumbnailUrl: img,
         sourceUrl: fgyt,
@@ -50,8 +50,8 @@ handler.all = async function (m) {
         mediaUrl: fgyt,
         mediaType: 1,
         description: 'Suscribete : ' + fgyt,
-        title: 'RÌRÚRÚ-ßÖ†',
-        body: 'ムののり りﾑﾘ ﾑん乇ﾑり',
+        title: 'RDJ-Ai',
+        body: 'Made by JEFF with love ❤️',
         thumbnailUrl: img,
         sourceUrl: fgyt,
         renderLargerThumbnail: true,
@@ -63,8 +63,8 @@ handler.all = async function (m) {
     key: { fromMe: false, participant: `0@s.whatsapp.net`, remoteJid: 'status@broadcast' },
     message: {
       contactMessage: {
-        displayName: `RIRURU`,
-        vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:'RIRURU'\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`,
+        displayName: `RDJ-Ai`,
+        vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:'RDJ-Ai'\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`,
       },
     },
   }

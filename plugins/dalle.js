@@ -14,7 +14,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     if (response.ok) {
       const imageBuffer = await response.buffer()
       let imgurl = await uploadImage(imageBuffer)
-      await conn.sendButton(m.chat,'Here is your Result', author, imgurl, [['Script', `.sc`]], null, [['Follow Me', `https://github.com/thearju`]], m)
+      await conn.sendButton(m.chat,'Here is your Result', author, imgurl, [['', ``]], m, [['Follow Me', `https://www.instagram.com/vfxartist_jeff?igsh=MXF0eWRoYXMzbDdsOQ==`]], m)
     } else {
       throw '*Image generation failed*'
     }

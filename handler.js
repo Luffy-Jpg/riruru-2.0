@@ -116,7 +116,7 @@ export async function handler(chatUpdate) {
         if (!isNumber(chat.expired)) chat.expired = 0
       } else
         global.db.data.chats[m.chat] = {
-          antiDelete: false,
+          antiDelete: true,
           antiLink: true,
           antiSticker: false,
           antiToxic: false,
@@ -129,7 +129,7 @@ export async function handler(chatUpdate) {
           sDemote: '',
           simi: false,
           sPromote: '',
-          sticker: false,
+          sticker: true,
           sWelcome: '',
           useDocument: false,
           viewOnce: true,
@@ -556,10 +556,10 @@ export async function participantsUpdate({ id, participants, action }) {
                 contextInfo: {
                   mentionedJid: [user],
                   externalAdReply: {
-                    title: 'RÌRÚRÚ-ßÖ†',
-                    body: 'welcome to Group',
+                    title: 'RDJ-Ai',
+                    body: 'GROUP PR ANE KLIYE DANYAWAD AB BAHAR GYE THO APKA BAAP GANDU',
                     thumbnailUrl: welcomeApiUrl,
-                    sourceUrl: 'https://chat.whatsapp.com/FioZaOezu5sJ5Kyxjl8wmB',
+                    sourceUrl: 'https://chat.whatsapp.com/KRfilRVOtt0DOwdAGFq1vE',
                     mediaType: 1,
                     renderLargerThumbnail: true,
                   },
@@ -613,10 +613,10 @@ export async function participantsUpdate({ id, participants, action }) {
                 contextInfo: {
                   mentionedJid: [user],
                   externalAdReply: {
-                    title: 'RÌRÚRÚ-ßÖ†',
+                    title: 'RDJ-Ai',
                     body: 'Goodbye from  Group',
                     thumbnailUrl: leaveApiUrl,
-                    sourceUrl: 'https://chat.whatsapp.com/FioZaOezu5sJ5Kyxjl8wmB',
+                    sourceUrl: 'https://chat.whatsapp.com/KRfilRVOtt0DOwdAGFq1vE',
                     mediaType: 1,
                     renderLargerThumbnail: true,
                   },

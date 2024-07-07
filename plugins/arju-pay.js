@@ -21,13 +21,13 @@ let pp = 'https://i.postimg.cc/50NqVZxR/Screenshot-2024-03-05-23-13-18-141-com-o
       title: "Payment amount : ₹10",
       body: "Click here to make payment!",
       thumbnailUrl: pp,
-      sourceUrl: 'https://bot-support.vercel.app',
+      sourceUrl: 'https://chat.whatsapp.com/KRfilRVOtt0DOwdAGFq1vE',
       mediaType: 1,
       renderLargerThumbnail: true
       }}})
 }
 handler.help = ['pay']
-handler.tags = ['gmx']
+handler.tags = ['RDJ-Ai']
 handler.command = ['payment', 'upi', 'pay']
 handler.register = false
 handler.group = true 

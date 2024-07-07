@@ -4,18 +4,18 @@
   "keywords": [
     "whatsapp Ai"
   ],
-  "repository": "https://github.com/thearju/gmx-1.0",
+  "Instagram Handle": "https://www.instagram.com/vfxartist_jeff?igsh=MXF0eWRoYXMzbDdsOQ==",
   "stack": "container",
   "env": {
     "OWNERS": {
       "description": "owner numbers",
       "required": true,
-      "value": "919131652091;ARJU"
+      "value": "917090462940;JEFF"
     },
     "BOTNAME": {
       "description": "Give your BOT a name",
       "required": true,
-      "value": "Riruru"
+      "value": "RDJ-Ai"
     },
     "DATABASE_URL": {
       "description": "your mongodb database url",

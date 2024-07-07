@@ -24,7 +24,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       stiker = await createSticker(false, args[0], '', author, 20)
     } else throw `*RESPOND TO A IMAGE OR VIDEO OR GIF ${usedPrefix + command}*`
   } catch {
-    stiker = '*huh!*'
+    stiker = '*GDHA STICKER BANANE NAHI AATA!*'
   } finally {
     m.reply(stiker)
   }

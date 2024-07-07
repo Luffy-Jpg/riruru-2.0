@@ -60,7 +60,7 @@ let handler = async (m, { conn, command, text, usedPrefix }) => {
       mimetype: 'audio/mpeg',
       ptt: false,
       waveform: [100, 0, 0, 0, 0, 0, 100],
-      fileName: `MUSIC BOT BY ARJU`,
+      fileName: `MUSIC BOT BY JEFF`,
       contextInfo: {
         externalAdReply: {
           showAdAttribution: true,

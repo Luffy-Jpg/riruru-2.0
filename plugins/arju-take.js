@@ -7,16 +7,16 @@ let handler = async (m, { conn, text, args }) => {
   let g = typeof stick[1] !== 'undefined' ? stick[1] : author
   try {
     let mime = m.quoted.mimetype || ''
-    if (!/webp/.test(mime)) throw 'respond to a sticker'
+    if (!/webp/.test(mime)) throw 'sticker KO REPLY DENA THA MACHAR KA TATTA'
     let img = await m.quoted.download()
-    if (!img) throw 'Responde to sticker!'
+    if (!img) throw 'sticker KO REPLY DENA THA MACHAR KA TATTA'
     stiker = await addExif(img, f, g)
   } catch (e) {
     console.error(e)
     if (Buffer.isBuffer(e)) stiker = e
   } finally {
     if (stiker) conn.sendFile(m.chat, stiker, 'wm.webp', '', m, null, rpl)
-    else throw 'conversion failed'
+    else throw 'YE WALA STICKER BANE LAYAK NAHI HAI MADARCHOD'
   }
 }
 handler.help = ['take <name>|<author>']
