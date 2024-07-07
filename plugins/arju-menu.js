@@ -15,7 +15,7 @@ import {
  // %UCPN
  const defaultMenu = {
   before: `
-   🐬  🎀  𝐻𝐸𝐿𝐿🏵\n%name\n𝑀𝒴 𝒩𝒜𝑀𝐸 𝐼𝒮 𝑅𝐼𝑅𝒰𝑅𝒰  🎀  🐬\n%ucpn\n
+   RDJ-Ai\n%ucpn\n
    ◆━━━━━✥ *USER* ✥━━━━━◆
  
      *𓆩 Name :* %name
@@ -27,7 +27,7 @@ import {
 
    ◆━━━━━✥ *INFO* ✥━━━━━◆
  
-     *𓆩 Bot Name :* Riruru
+     *𓆩 Bot Name :* RDJ-Ai
      *𓆩 Mode :* %mode
      *𓆩 Platform :* %platform
      *𓆩 Type :* NodeJs
@@ -44,7 +44,7 @@ import {
  `.trimStart(),
  header: "\n\n◆━━━━━✥ *%category* ✥━━━━━◆",
  body: "*𓆩* %cmd %isPremium %islimit",
- footer: "\n> Riruru™",
+ footer: "\n> RDJ-Ai™",
  after: "\n%me",
  }
  let handler = async (m, {

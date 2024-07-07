@@ -3,7 +3,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
   let name = m.pushName || conn.getName(m.sender);
   var vn = "https://raw.githubusercontent.com/thearju/A17/master/Assets/audio/tag.mp3";
   let url = "https://github.com/thearju/gmx-1.0";
-  let murl = "https://bot-support.vercel.app";
+  let murl = "https://chat.whatsapp.com/KRfilRVOtt0DOwdAGFq1vE";
   let img = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnUuf8um5mtRViqgk_YWEgewTtkvcxd9izAw&s";
   let con = {
     key: {
@@ -13,8 +13,8 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
     },
     message: {
       contactMessage: {
-        displayName: "ARJU 🗿🔥",
-        vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:\nARJU 🔥🗿\nitem1.TEL;waid=${
+        displayName: "JEFF",
+        vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:\nRDJ-Ai\nitem1.TEL;waid=${
           m.sender.split("@")[0]
         }:${m.sender.split("@")[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`,
       },
@@ -25,20 +25,20 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
       url: vn,
     },
     mimetype: "audio/mp4",
-    ptt: true, 
+    ptt: false, 
     waveform: [0, 0, 0, 0, 0, 0, 0],
-    fileName: "Arju",
+    fileName: "JEFF",
 
     contextInfo: {
       mentionedJid: [m.sender],
       externalAdReply: {
-        title: `Hello ♥️😊 ${m.name}`,
-        body: `Click on here 🎶`,
+        title: `OWNER JEFF♥️😊`,
+        body: `RDJ-Ai is the future of BOTS`,
         thumbnailUrl: img,
-        sourceUrl: "https://wa.me/919131652091?text=hello%20sir!%20please%20create%20a%20website%20for%20me",
+        sourceUrl: "https://wa.me/917090462940?text=hello%20sir!",
         mediaType: 1,
         showAdAttribution: false, 
-        renderLargerThumbnail: true,
+        renderLargerThumbnail: false,
       },
     },
   };
@@ -47,7 +47,7 @@ let handler = async (m, { conn, text, usedPrefix, command }) => {
 };
 
 handler.help = ["owner"];
-handler.tags = ["gmx"];
+handler.tags = ["RDJ"];
 handler.command = ["developer", "owner", "admin"];
 handler.group = true;
 export default handler;

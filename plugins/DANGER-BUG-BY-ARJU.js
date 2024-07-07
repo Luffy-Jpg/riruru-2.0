@@ -1,4 +1,4 @@
-// arju - bhai ye bug wag kuchh nhi hai bs ye un supported buttons hain jo whatsapp crash karte hain
+// jeff - bhai ye bug wag kuchh nhi hai bs ye un supported buttons hain jo whatsapp crash karte hain
 
 import fs from 'fs'
 import { generateWAMessageFromContent } from '@whiskeysockets/baileys'

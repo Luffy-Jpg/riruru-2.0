@@ -28,11 +28,11 @@ Changes to Terms and Conditions:
 We reserve the right to modify or update these Terms and Conditions at any time. Any changes will be effective immediately upon posting. Your continued use of our WhatsApp bot after any changes indicates your acceptance of the updated Terms and Conditions.
 
 Contact Us:
-If you have any questions or concerns about these Terms and Conditions, please contact us at *https://bot-support.vercel.app*
+If you have any questions or concerns about these Terms and Conditions, please contact us at *https://wa.me/917090462940?text=hello%20sir!*
 
 By using our WhatsApp bot, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions. Thank you for using our bot!`.trim())
 handler.help = ['terms']
-handler.tags = ['DAS']
+handler.tags = ['RDJ']
 handler.command = ['tnc', 'terms'] 
 handler.group = true
 

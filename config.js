@@ -6,7 +6,7 @@ import fs from 'fs'
 import dotenv from 'dotenv'
 dotenv.config()
 
-const ownervb = process.env.OWNERS || "919131652091;ARJU"
+const ownervb = process.env.OWNERS || "917090462940;JEFF"
 
 
 const ownerlist = ownervb.split(';');
@@ -21,12 +21,12 @@ for (let i = 0; i < ownerlist.length; i += 2) {
     global.owner.push(owner);
 }
 
-//global.pairingNumber = "918431403667" //put your bot number here
+//global.pairingNumber = "" //put your bot number here
 
 //global.database = 'mongodb+srv://arju:grandmasterx9131@payal.vczf3er.mongodb.net/?retryWrites=true&w=majority'
 global.mods = ['917090462940']
-global.prems = ['917090462940']
-global.allowed = ['917090462940']
+global.prems = ['917090462940', '254106722539']
+global.allowed = ['917090462940', '254106722539']
 global.keysZens = ['c2459db922', '37CC845916', '6fb0eff124']
 global.keysxxx = keysZens[Math.floor(keysZens.length * Math.random())]
 global.keysxteammm = [
@@ -73,7 +73,7 @@ global.APIKeys = {
 global.botname = 'RDJ-Ai'
 global.premium = 'true'
 global.packname = ''
-global.author = 'RDJ-JEFF'
+global.author = 'JEFF'
 global.menuvid = 'https://imgur.com/HH0g2sa.mp4'
 global.igfg = 'https://chat.whatsapp.com/KRfilRVOtt0DOwdAGFq1vE'
 global.dygp = 'https://chat.whatsapp.com/KRfilRVOtt0DOwdAGFq1vE'
@@ -83,7 +83,7 @@ global.fgpyp = 'https://chat.whatsapp.com/KRfilRVOtt0DOwdAGFq1vE'
 global.fglog = 'https://chat.whatsapp.com/KRfilRVOtt0DOwdAGFq1vE'
 global.thumb = fs.readFileSync('bot.jpg')
 
-global.wait = '> Loading...'
+global.wait = '> SABAR RAKH DENE TAK...'
 global.rwait = '⌛'
 global.dmoji = '🤭'
 global.done = '✅'

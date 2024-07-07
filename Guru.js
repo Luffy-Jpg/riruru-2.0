@@ -374,7 +374,7 @@ async function connectionUpdate(update) {
   if (connection === 'open') {
     const { jid, name } = conn.user
 
-    let msgf = `Hello! ${name} you have successfully deployed RIRURU (GURU-BOT)\nJoin my support Group for any Query\n https://chat.whatsapp.com/KlSW8y9vDAh5ism0aN4i7a`
+    let msgf = `Hello! ${name} you have successfully deployed RDJ-Ai\nJoin my support Group for any Query\n https://chat.whatsapp.com/KlSW8y9vDAh5ism0aN4i7a`
 
     let gmes = conn.sendMessage(
       jid,
@@ -428,7 +428,7 @@ global.reloadHandler = async function (restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate)
   }
 
-  conn.welcome = ` Hello @user!\n\n🎉 *WELCOME* to the group @group!\n\n📜 Please read the *DESCRIPTION* @desc.`
+  conn.welcome = ` Hello @user!\n\n🎉 *WELCOME* to the group!\n\n📜 Please read the *DESCRIPTION* @desc.`
   conn.bye = `👋GOODBYE @user \n\nSee you later!`
   conn.spromote = `*@user* has been promoted to an admin!`
   conn.sdemote = `*@user* is no longer an admin.`

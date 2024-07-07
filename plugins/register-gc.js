@@ -31,7 +31,7 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
 `.trim())
 }
 handler.help = ['reg'].map(v => v + ' <name.age>')
-handler.tags = ['DAS']
+handler.tags = ['RDJ']
 
 handler.command = ['verify', 'reg', 'register', 'registrar'] 
 handler.group = true 

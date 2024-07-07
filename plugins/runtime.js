@@ -15,7 +15,7 @@ let img = 'https://i.postimg.cc/N0gPt8Kz/IMG-20240120-WA0198.jpg'
     (v) => v.help && v.tags
   ).length 
     let muptime = clockString(_muptime)
-    let str =  `${muptime}\n\n*VERSION*\nRIRURU-V1.89\n\n*Name*\n${conn.user.name}\n\n*BOT CREATED TIME*\n29 DECEMBER 2022 \n\n*ADMINISTRATOR*\nARJU\n\n${totalf}`
+    let str =  `${muptime}\n\n*VERSION*\nRDJ-Ai-V1\n\n*Name*\n${conn.user.name}\n\n*BOT CREATED TIME*\n29 DECEMBER 2022 \n\n*ADMINISTRATOR*\nJEFF\n\n${totalf}`
     conn.sendMessage(m.chat, {
       text: str,
       contextInfo: {
@@ -24,9 +24,9 @@ let img = 'https://i.postimg.cc/N0gPt8Kz/IMG-20240120-WA0198.jpg'
       forwardingScore: 0,
       externalAdReply: {
       title: "FOLLOW ME ON INSTAGRAM",
-      body: "ARJU-SONWANI", 
+      body: "@Vvfxartist_jeff", 
       thumbnailUrl: img,
-      sourceUrl: 'https://www.instagram.com/arju_sonwani.dev?igsh=a2UxZ3ZyZjNicmUw',
+      sourceUrl: 'https://www.instagram.com/vfxartist_jeff?igsh=MXF0eWRoYXMzbDdsOQ==',
       mediaType: 1,
       ShowAdAttribution: true, 
       renderLargerThumbnail: true

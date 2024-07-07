@@ -6,12 +6,12 @@ let handler = async (m) =>
 Hello bro! 
 For adding this bot to your group, Send a group link to the bot admin.
 
-*Admin : ARJU*\n*Contact : wa.me/919131652091*
+*Admin : JEFF*\n*Contact : wa.me/917090462940*
 
 `.trim(),
   );
 handler.help = ["add"];
-handler.tags = ["DAS"];
+handler.tags = ["RDJ"];
 handler.command = ["add"];
 handler.group = true;
 
